@@ -10,6 +10,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 | `<polylocal-digital-marketing>` | `dist/polylocal-digital-marketing.js` | The Digital Marketing service page |
 | `<polylocal-lead-generation>` | `dist/polylocal-lead-generation.js` | The B2B Lead Generation service page |
 | `<polylocal-about>` | `dist/polylocal-about.js` | The About page |
+| `<polylocal-contact>` | `dist/polylocal-contact.js` | The Contact page, wrapped around Odoo's own contact form |
 | `<polylocal-insights>` | `dist/polylocal-insights.js` | The Insights page: case studies, then events, updated from the blog |
 | `<polylocal-article>` | `dist/polylocal-article.js` | Blog articles: case studies and event recaps |
 | `<polylocal-map>` | `dist/polylocal-map.js` | The interactive Europe and Asia map on its own (already included in the homepage) |
@@ -80,6 +81,17 @@ Same steps as the homepage, on the `/about-us` page, with:
 ```
 
 It names no individual team members, by design.
+
+## Add the Contact page
+
+On `/contactus`, keep Odoo's own Form block (it sends messages to the CRM). Above it, add one Embed Code block (padding 0) with:
+
+```html
+<polylocal-contact></polylocal-contact>
+<script src="https://antoinesjc.github.io/Polylocal/widgets/dist/polylocal-contact.js" defer></script>
+```
+
+On the published page the widget moves the Odoo form into its form card, hides the rest of the Form block (its default title and text), restyles the fields and relabels them in English or Chinese. The form itself is not changed, so Odoo still creates the lead, checks required fields and shows its thank-you message. In the editor (where widgets don't run) you see and edit the Odoo form as usual. New fields you add in Odoo are styled automatically and shown full width above the message box; their labels stay as you write them in Odoo.
 
 ## Add the Insights page
 
