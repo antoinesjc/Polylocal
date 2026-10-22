@@ -9,6 +9,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 | `<polylocal-home>` | `dist/polylocal-home.js` | The whole homepage: hero, map, press and partners, problem, two directions, services, process, team, insights, call to action |
 | `<polylocal-digital-marketing>` | `dist/polylocal-digital-marketing.js` | The Digital Marketing service page |
 | `<polylocal-lead-generation>` | `dist/polylocal-lead-generation.js` | The B2B Lead Generation service page |
+| `<polylocal-about>` | `dist/polylocal-about.js` | The About page |
 | `<polylocal-map>` | `dist/polylocal-map.js` | The interactive Europe and Asia map on its own (already included in the homepage) |
 
 ![Brussels selected with the Europe zoom (English), and Taipei selected (Traditional Chinese)](demo/preview.png)
@@ -67,6 +68,17 @@ Same steps as the homepage, on the `/b2b-lead-generation` page, with:
 
 Its buttons go to `/contactus` and `/digital-marketing` (with `/zh_TW` on the Chinese site).
 
+## Add the About page
+
+Same steps as the homepage, on the `/about-us` page, with:
+
+```html
+<polylocal-about></polylocal-about>
+<script src="https://antoinesjc.github.io/Polylocal/widgets/dist/polylocal-about.js" defer></script>
+```
+
+It names no individual team members, by design.
+
 ## Add only the map
 
 ```html
@@ -80,6 +92,7 @@ Its buttons go to `/contactus` and `/digital-marketing` (with `/zh_TW` on the Ch
 | `view` | `corridor`, `europe` | `corridor` |
 | `theme` | `dark`, `light` | `dark` |
 | `cta-href` / `cta-href-zh` | link for "How we work on the ground" | `/about-us` / `/zh_TW/about-us` |
+| `no-cta` | hide that link | off |
 
 | Hub | Region highlighted |
 | --- | --- |
@@ -104,6 +117,7 @@ All wording lives in one file per widget, with English and Chinese side by side:
 - Homepage: [`src/home/i18n.js`](src/home/i18n.js)
 - Digital Marketing: [`src/digital-marketing/i18n.js`](src/digital-marketing/i18n.js)
 - B2B Lead Generation: [`src/lead-generation/i18n.js`](src/lead-generation/i18n.js)
+- About: [`src/about/i18n.js`](src/about/i18n.js)
 - Map: [`src/map/i18n.js`](src/map/i18n.js)
 - Shared by all pages (logo strip labels, closing checklist, "Contact us"): [`src/shared/common.js`](src/shared/common.js)
 
@@ -135,6 +149,7 @@ python3 -m http.server 8000
 # homepage: http://localhost:8000/demo/home.html
 # digital marketing: http://localhost:8000/demo/digital-marketing.html
 # b2b lead generation: http://localhost:8000/demo/lead-generation.html
+# about: http://localhost:8000/demo/about.html
 # map only: http://localhost:8000/demo/map.html
 ```
 
@@ -150,6 +165,7 @@ widgets/
 ├── src/home/                homepage widget and its text
 ├── src/digital-marketing/   Digital Marketing page widget, its text and styles
 ├── src/lead-generation/     B2B Lead Generation page widget, its text and styles
+├── src/about/               About page widget, its text and styles
 ├── src/map/                 map widget, its text and generated map shapes
 ├── scripts/                 map data and bundle builders
 └── demo/                    local preview pages

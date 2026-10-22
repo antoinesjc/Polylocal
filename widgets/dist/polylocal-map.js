@@ -98,6 +98,7 @@ svg.map{position:absolute;inset:0;width:100%;height:100%;display:block}
 .card li::before{content:"";flex:0 0 auto;width:6px;height:6px;margin-top:8px;background:var(--accent)}
 .cta{margin-top:auto;font-weight:800;font-size:14px;color:#17222A;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
 .cta:hover{text-decoration:underline}
+:host([no-cta]) .cta{display:none}
 .cta svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round}
 .card[data-tone="clay"]{--accent:var(--pl-clay);--accent-text:#9A5C54}
 .card[data-tone="sky"]{--accent:var(--pl-sky);--accent-text:#3E6C82}

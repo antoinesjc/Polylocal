@@ -11,6 +11,7 @@ const WIDGETS = [
   { entry: '../src/home/polylocal-home.js', out: '../dist/polylocal-home.js', name: 'polylocal-home' },
   { entry: '../src/digital-marketing/polylocal-digital-marketing.js', out: '../dist/polylocal-digital-marketing.js', name: 'polylocal-digital-marketing' },
   { entry: '../src/lead-generation/polylocal-lead-generation.js', out: '../dist/polylocal-lead-generation.js', name: 'polylocal-lead-generation' },
+  { entry: '../src/about/polylocal-about.js', out: '../dist/polylocal-about.js', name: 'polylocal-about' },
 ];
 
 for (const w of WIDGETS) {

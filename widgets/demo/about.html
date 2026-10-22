@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polylocal About widget demo</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; }
+  /* Mimics Odoo: an Embed Code block sits inside a centred container. */
+  .fake-odoo-header { background: #6C757D; color: #fff; padding: 18px 24px; display: flex; gap: 12px; align-items: center; font-weight: 600; }
+  .fake-odoo-header button { font: inherit; padding: 6px 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,.5); background: transparent; color: #fff; cursor: pointer; }
+  .container { max-width: 1140px; margin: 0 auto; padding: 0 12px; }
+</style>
+</head>
+<body>
+<div class="fake-odoo-header">
+  Odoo header (demo) ·
+  <button type="button" onclick="document.documentElement.lang='en'">English</button>
+  <button type="button" onclick="document.documentElement.lang='zh-TW'">繁體中文</button>
+</div>
+<section class="s_embed_code"><div class="container">
+  <!-- This is exactly what goes in the Odoo Embed Code block -->
+  <polylocal-about></polylocal-about>
+</div></section>
+<script src="../dist/polylocal-about.js"></script>
+</body>
+</html>
