@@ -2,13 +2,24 @@ import { DM } from './i18n.js';
 import { PolylocalPage } from '../shared/page.js';
 import CSS from './styles.js';
 
-// The search mock-up in the hero is always in Traditional Chinese on purpose:
-// it shows what a Taiwanese buyer sees when a European brand ranks first.
+// The search mock-up in the hero shows the corridor from the reader's side.
+// English site: a Taiwanese buyer searching in Traditional Chinese finds a European brand first.
+// Chinese site (Taiwanese companies going to Europe): a European buyer searching in English finds a Taiwanese brand first.
 const SEARCH = {
-  query: '歐洲 精密機械 供應商 台灣',
-  url: 'yourbrand.eu › zh-tw',
-  title: '歐洲精密機械專家｜台灣在地服務窗口',
-  text: '在地化內容、台灣案例與中文聯絡窗口，讓買家第一眼就信任你。',
+  en: {
+    lang: 'zh-TW',
+    query: '歐洲 精密機械 供應商 台灣',
+    url: 'yourbrand.eu › zh-tw',
+    title: '歐洲精密機械專家｜台灣在地服務窗口',
+    text: '在地化內容、台灣案例與中文聯絡窗口，讓買家第一眼就信任你。',
+  },
+  'zh-TW': {
+    lang: 'en',
+    query: 'precision machinery supplier Taiwan',
+    url: 'yourbrand.com.tw › en',
+    title: 'Precision Machinery from Taiwan | EU Delivery & Support',
+    text: 'Clear specs, European references and an English-speaking contact, so buyers trust you at first sight.',
+  },
 };
 
 class PolylocalDigitalMarketing extends PolylocalPage {
@@ -16,6 +27,7 @@ class PolylocalDigitalMarketing extends PolylocalPage {
 
   page(lang, h) {
     const t = DM[lang];
+    const q = SEARCH[lang];
     const { esc, L, icons } = h;
     return `
   <section class="hero ink">
@@ -31,13 +43,13 @@ class PolylocalDigitalMarketing extends PolylocalPage {
         </div>
       </div>
       <figure class="search" role="img" aria-label="${esc(t.visual.label)}">
-        <div class="search-card" lang="zh-TW">
-          <div class="search-box"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>${esc(SEARCH.query)}</div>
+        <div class="search-card" lang="${q.lang}">
+          <div class="search-box"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>${esc(q.query)}</div>
           <div class="result top">
             <span class="result-badge" lang="${lang}">${esc(t.visual.badge)}</span>
-            <div class="result-url">${esc(SEARCH.url)}</div>
-            <div class="result-title">${esc(SEARCH.title)}</div>
-            <div class="result-text">${esc(SEARCH.text)}</div>
+            <div class="result-url">${esc(q.url)}</div>
+            <div class="result-title">${esc(q.title)}</div>
+            <div class="result-text">${esc(q.text)}</div>
           </div>
           <div class="result ghost-row" aria-hidden="true"><i style="width:40%"></i><b style="width:75%"></b><i style="width:90%"></i></div>
           <div class="result ghost-row faint" aria-hidden="true"><i style="width:35%"></i><b style="width:68%"></b></div>

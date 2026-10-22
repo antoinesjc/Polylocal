@@ -13,7 +13,7 @@ export default `
   display:block; background:var(--ivory); color:var(--text);
 }
 *,*::before,*::after{box-sizing:border-box}
-.page{font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow:hidden}
+.page{font-family:var(--sans);font-size:16px;line-height:1.6;text-align:left;-webkit-font-smoothing:antialiased;overflow:hidden}
 :host([data-lang="zh-TW"]) .page{--display:'Manrope','Noto Sans TC','PingFang TC','Microsoft JhengHei',sans-serif;--sans:var(--zh)}
 h1,h2,h3,p,ul,ol{margin:0}
 h1,h2,h3{text-wrap:balance}
