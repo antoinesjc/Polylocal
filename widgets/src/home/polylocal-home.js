@@ -87,7 +87,7 @@ class PolylocalHome extends HTMLElement {
       <div class="hero-side">
         <p class="lead">${esc(t.hero.lead)}</p>
         <div class="btns">
-          <a class="btn primary" href="#contact">${esc(t.hero.primary)}</a>
+          <a class="btn primary" href="${L('/contactus')}">${esc(t.hero.primary)}</a>
           <a class="btn ghost" href="#services">${esc(t.hero.secondary)}</a>
         </div>
       </div>

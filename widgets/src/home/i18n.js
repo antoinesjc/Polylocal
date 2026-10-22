@@ -8,7 +8,7 @@ export const HOME = {
       eyebrow: 'Europe ⇄ Taiwan · Digital marketing & B2B lead generation',
       title: ['Think global.', 'Act local.'],
       lead: 'We make European companies visible in Taiwan, and Asian companies visible across Europe. Then we turn that visibility into qualified pipeline.',
-      primary: 'Book a free 30-min call',
+      primary: 'Contact us',
       secondary: 'Explore services',
     },
     proof: {
@@ -126,7 +126,7 @@ export const HOME = {
       eyebrow: '歐洲 ⇄ 台灣 · 數位行銷與 B2B 潛在客戶開發',
       title: ['放眼全球，', '深耕在地。'],
       lead: '我們讓歐洲企業在台灣被看見，也讓亞洲企業在歐洲被看見，並將這份能見度轉化為實際的商機。',
-      primary: '預約 30 分鐘免費諮詢',
+      primary: '聯絡我們',
       secondary: '了解服務內容',
     },
     proof: {
