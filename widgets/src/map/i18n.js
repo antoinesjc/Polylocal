@@ -117,15 +117,4 @@ export const STRINGS = {
   },
 };
 
-/**
- * Pick the widget language.
- * Order: the element's own `lang` attribute, then the nearest ancestor `lang`
- * (Odoo sets <html lang="zh-TW"> on the Chinese site), then the URL (/zh_TW/...).
- */
-export function detectLang(el) {
-  const own = el.getAttribute('lang');
-  const inherited = el.closest('[lang]')?.getAttribute('lang') || document.documentElement.lang || '';
-  const fromUrl = /(^|\/)zh[_-]?(tw|hant)?(\/|$)/i.test(location.pathname) ? 'zh-TW' : '';
-  const raw = (own || fromUrl || inherited || 'en').toLowerCase();
-  return raw.startsWith('zh') ? 'zh-TW' : 'en';
-}
+export { detectLang } from '../shared/lang.js';

@@ -1,8 +1,8 @@
 {
-  "name": "polylocal-map",
+  "name": "polylocal-widgets",
   "version": "1.0.0",
   "private": true,
-  "description": "Interactive Europe–Taiwan corridor map for polylocal.eu (English and Traditional Chinese).",
+  "description": "Bilingual (English and Traditional Chinese) widgets for polylocal.eu.",
   "type": "module",
   "scripts": {
     "data": "node scripts/build-map-data.mjs",

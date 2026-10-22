@@ -1,5 +1,6 @@
 import MAP from './map-data.js';
 import { STRINGS, detectLang } from './i18n.js';
+import { loadFonts } from '../shared/lang.js';
 
 const HUBS = ['taipei', 'warsaw', 'brussels'];
 const SVG_NS = 'http://www.w3.org/2000/svg';
@@ -152,6 +153,7 @@ class PolylocalMap extends HTMLElement {
   }
 
   connectedCallback() {
+    loadFonts();
     const hub = this.getAttribute('hub');
     if (HUBS.includes(hub)) this.state.hub = hub;
     if (this.getAttribute('view') === 'europe') this.state.view = 'europe';
