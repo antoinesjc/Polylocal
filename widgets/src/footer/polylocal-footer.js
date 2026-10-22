@@ -8,10 +8,10 @@
 // itself is untouched, so Odoo still adds every address to the mailing list.
 // Odoo's copyright bar (with the language switcher) stays below, restyled.
 import { PolylocalPage } from '../shared/page.js';
+import { assetUrl } from '../shared/lang.js';
 import I18N from './i18n.js';
 import CSS, { DOC_CSS } from './styles.js';
 
-const MARK = `<svg class="f-mark" width="30" height="34" viewBox="0 0 40 46" aria-hidden="true"><defs><linearGradient id="plFootGrad" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#81AEC4"/><stop offset="1" stop-color="#C98B82"/></linearGradient></defs><circle cx="21" cy="6" r="4.6" fill="#C98B82"/><path d="M17 16c-8 3-12 12-7 19 5 7 16 6 18-2 2-7-5-12-11-8" fill="none" stroke="url(#plFootGrad)" stroke-width="5.2" stroke-linecap="round"/><path d="M25 15c7 3 11 11 7 18-4 6-12 7-16 2" fill="none" stroke="url(#plFootGrad)" stroke-width="5.2" stroke-linecap="round"/></svg>`;
 const LINKEDIN = `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4v11H3zM9.5 9.5h3.8v1.6h.06c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.77 2.65 4.77 6.1v5.36h-4v-4.75c0-1.13-.02-2.59-1.58-2.59-1.58 0-1.82 1.23-1.82 2.5v4.84h-4z"/></svg>`;
 
 class PolylocalFooter extends PolylocalPage {
@@ -65,7 +65,7 @@ class PolylocalFooter extends PolylocalPage {
   <div class="f-wrap">
     <div class="wrap f-top">
       <div class="f-brand">
-        <a class="f-logo" href="${L('/')}" aria-label="Polylocal">${MARK}<span>Polylocal</span></a>
+        <a class="f-logo" href="${L('/')}"><img src="${esc(assetUrl('logos/polylocal.png', this))}" alt="Polylocal" width="176" height="44"></a>
         <p class="f-tag">${esc(t.tagline)}</p>
         <p class="f-about">${esc(t.about)}</p>
         <div class="f-contact">
