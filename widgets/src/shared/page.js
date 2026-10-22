@@ -63,7 +63,7 @@ export class PolylocalPage extends HTMLElement {
     const logo = (l) => `<img src="${esc(assetUrl(l.file, this))}" alt="${esc(l.alt)}" style="height:${l.h}px" loading="lazy">`;
     return {
       lang, esc, L, icons: ICONS, common: c,
-      // Press and partner logos
+      // Press and partner logos. Used on the homepage only.
       proof: () => `
   <section class="proof">
     <div class="wrap proof-row">

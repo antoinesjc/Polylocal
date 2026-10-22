@@ -353,7 +353,6 @@ details p{margin-top:14px;font-size:16px;line-height:1.7;color:var(--text-2);max
       </figure>
     </div>
   </section>
-${o.proof()}
   <section class="wrap split">
     <div class="split-a">
       <p class="eyebrow sky-text">${e(i.problem.kicker)}</p>

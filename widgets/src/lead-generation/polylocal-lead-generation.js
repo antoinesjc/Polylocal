@@ -43,7 +43,6 @@ class PolylocalLeadGeneration extends PolylocalPage {
       </ol>
     </div>
   </section>
-${h.proof()}
   <section class="wrap split">
     <div class="split-a">
       <p class="eyebrow">${esc(t.problem.kicker)}</p>

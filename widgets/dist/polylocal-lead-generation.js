@@ -339,7 +339,6 @@ tbody td.us{color:var(--ink);font-weight:600}
       </ol>
     </div>
   </section>
-${o.proof()}
   <section class="wrap split">
     <div class="split-a">
       <p class="eyebrow">${e(a.problem.kicker)}</p>

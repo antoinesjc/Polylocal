@@ -46,7 +46,6 @@ class PolylocalDigitalMarketing extends PolylocalPage {
       </figure>
     </div>
   </section>
-${h.proof()}
   <section class="wrap split">
     <div class="split-a">
       <p class="eyebrow sky-text">${esc(t.problem.kicker)}</p>

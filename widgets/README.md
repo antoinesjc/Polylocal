@@ -113,7 +113,7 @@ Commit and push the updated `dist/` files, then change the version code after `@
 
 ## Adding a new widget
 
-1. Create `src/<name>/` with the component and an `i18n.js` holding `en` and `zh-TW` text. A full page extends `PolylocalPage` from `src/shared/page.js`, which handles language switching, full-width layout, the press and partner strip (`h.proof()`) and the closing call to action (`h.cta()`). A smaller widget uses `detectLang`, `localHref` and `watchLang` from `src/shared/lang.js`.
+1. Create `src/<name>/` with the component and an `i18n.js` holding `en` and `zh-TW` text. A full page extends `PolylocalPage` from `src/shared/page.js`, which handles language switching, full-width layout, the press and partner strip (`h.proof()`, used on the homepage only) and the closing call to action (`h.cta()`). A smaller widget uses `detectLang`, `localHref` and `watchLang` from `src/shared/lang.js`.
 2. Add it to the list in `scripts/build.mjs`.
 3. Add a demo page in `demo/`.
 
