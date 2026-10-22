@@ -20,7 +20,7 @@ It speaks **English** and **Traditional Chinese (Taiwan)** and picks the languag
 
 ```html
 <polylocal-map></polylocal-map>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@b9f3dc6a717b8143ce35d8ab07a51d599e9f0bb4/map-widget/dist/polylocal-map.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@2950a8ae90f7fd0ca9fd5b2ea35b520aa189d7e8/map-widget/dist/polylocal-map.js" defer></script>
 ```
 
 4. Save, then view the published page (Odoo does not run embedded scripts while you are in edit mode, so the block looks empty in the editor). Switch the site to 繁體中文 to check the Chinese version: no second embed is needed.
