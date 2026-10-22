@@ -1,5 +1,6 @@
 import { ARTICLES, LABELS } from './index.js';
 import { PolylocalPage } from '../shared/page.js';
+import { assetUrl } from '../shared/lang.js';
 import CSS from './styles.js';
 
 const titleText = (parts, lang) => parts.filter(Boolean).join(lang === 'zh-TW' ? '' : ' ');
@@ -29,7 +30,7 @@ class PolylocalArticle extends PolylocalPage {
     const sp = lang === 'zh-TW' ? '' : ' ';
 
     const block = (b) => this.block(b, h, a);
-    const wideTypes = new Set(['speakers', 'speakerRows', 'highlight', 'trio', 'feature']);
+    const wideTypes = new Set(['speakers', 'speakerRows', 'highlight', 'trio', 'feature', 'gallery']);
 
     const hero = `
   <header class="ink a-hero ${isCase ? 'has-card' : ''} tone-${a.tone}">
@@ -107,6 +108,15 @@ class PolylocalArticle extends PolylocalPage {
       case 'highlight': return `<div class="highlight"><div class="hl-head"><span class="hl-kicker">${esc(b.kicker)}</span><h2>${esc(b.title)}</h2></div><div class="hl-body"><p>${esc(b.text)}</p><div class="hl-chips">${b.chips.map((c) => `<span>${esc(c)}</span>`).join('')}</div></div></div>`;
       case 'trio': return `<p class="eyebrow">${esc(b.kicker)}</p><div class="trio">${b.items.map((x) => `<div class="trio-card"><span class="trio-r">R</span><h3>${esc(x)}</h3></div>`).join('')}</div>`;
       case 'feature': return `<div class="feature"><span class="feature-kicker">${esc(b.kicker)}</span><h2>${esc(b.title)}</h2>${b.p.map((x) => `<p>${esc(x)}</p>`).join('')}</div>`;
+      case 'gallery': {
+        const src = (f) => esc(assetUrl(`photos/${f}`, this));
+        const [first, ...rest] = b.photos;
+        return `<figure class="gallery g${b.photos.length}">
+          <img class="g-main" src="${src(first)}" alt="${esc(b.alt)}" loading="lazy">
+          ${rest.length ? `<div class="g-grid">${rest.map((f) => `<img src="${src(f)}" alt="${esc(b.alt)}" loading="lazy">`).join('')}</div>` : ''}
+          ${b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : ''}
+        </figure>`;
+      }
       default: return '';
     }
   }

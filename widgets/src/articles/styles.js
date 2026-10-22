@@ -127,6 +127,14 @@ export default `
 .feature h2{margin:0;font-size:30px;line-height:1.15;letter-spacing:-.02em;color:var(--ink)}
 .feature p{font-size:17px;line-height:1.7;color:var(--text-2);max-width:760px}
 
+/* photos */
+.gallery{margin:0}
+.gallery img{display:block;width:100%;object-fit:cover;background:var(--sand)}
+.g-main{aspect-ratio:16/9}
+.g-grid{margin-top:8px;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,240px),1fr));gap:8px}
+.g-grid img{aspect-ratio:4/3}
+.gallery figcaption{margin-top:12px;font-size:14px;color:var(--muted)}
+
 /* closing */
 .a-cta{margin-top:88px}
 .cta-in{padding-top:80px;padding-bottom:80px;display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between}
