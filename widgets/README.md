@@ -10,6 +10,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 | `<polylocal-digital-marketing>` | `dist/polylocal-digital-marketing.js` | The Digital Marketing service page |
 | `<polylocal-lead-generation>` | `dist/polylocal-lead-generation.js` | The B2B Lead Generation service page |
 | `<polylocal-about>` | `dist/polylocal-about.js` | The About page |
+| `<polylocal-insights>` | `dist/polylocal-insights.js` | The Insights page: case studies, then events, updated from the blog |
 | `<polylocal-article>` | `dist/polylocal-article.js` | Blog articles: case studies and event recaps |
 | `<polylocal-map>` | `dist/polylocal-map.js` | The interactive Europe and Asia map on its own (already included in the homepage) |
 
@@ -79,6 +80,17 @@ Same steps as the homepage, on the `/about-us` page, with:
 ```
 
 It names no individual team members, by design.
+
+## Add the Insights page
+
+Create a page (for example `/insights`) and add, as for the homepage:
+
+```html
+<polylocal-insights></polylocal-insights>
+<script src="https://antoinesjc.github.io/Polylocal/widgets/dist/polylocal-insights.js" defer></script>
+```
+
+It updates itself from the blog. Every post tagged **Case Studies** appears; posts that also carry the **Events** tag (or only that tag) are listed under Events. Posts made with the article widget show their summary, client logo, key result or first photo; other posts show the title, cover image, teaser and date set in Odoo. To publish a new one, just tag the blog post. The tag pages it reads are `/blog/tag/case-studies-18` and `/blog/tag/events-19`; if those tags are ever recreated, set `case-tag="..."` and `event-tag="..."` on the widget.
 
 ## Add an article to a blog post
 
