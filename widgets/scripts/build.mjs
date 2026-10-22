@@ -9,6 +9,7 @@ const path = (p) => new URL(p, import.meta.url).pathname;
 const WIDGETS = [
   { entry: '../src/map/polylocal-map.js', out: '../dist/polylocal-map.js', name: 'polylocal-map' },
   { entry: '../src/home/polylocal-home.js', out: '../dist/polylocal-home.js', name: 'polylocal-home' },
+  { entry: '../src/digital-marketing/polylocal-digital-marketing.js', out: '../dist/polylocal-digital-marketing.js', name: 'polylocal-digital-marketing' },
 ];
 
 for (const w of WIDGETS) {

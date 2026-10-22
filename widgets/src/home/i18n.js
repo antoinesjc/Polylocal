@@ -11,11 +11,6 @@ export const HOME = {
       primary: 'Contact us',
       secondary: 'Explore services',
     },
-    proof: {
-      featured: 'Featured in',
-      partners: 'Partners',
-      partnersNote: 'Organisations we co-organise events and run projects with',
-    },
     problem: {
       kicker: '01 · The problem',
       title: 'If your market can’t find you, it can’t buy from you.',
@@ -115,7 +110,6 @@ export const HOME = {
       kicker: 'Start here',
       title: 'Tell us where you want to grow.',
       body: 'Start with a free 30-minute consultation. We’ll look at your market, your current presence and the fastest route to being found.',
-      checks: ['No obligation, no sales pitch', 'In English, French or Mandarin', 'Taiwan, Central & Eastern Europe and the EU'],
       primary: 'Book my free consultation',
       secondary: 'See our services',
     },
@@ -128,11 +122,6 @@ export const HOME = {
       lead: '我們讓歐洲企業在台灣被看見，也讓亞洲企業在歐洲被看見，並將這份能見度轉化為實際的商機。',
       primary: '聯絡我們',
       secondary: '了解服務內容',
-    },
-    proof: {
-      featured: '媒體報導',
-      partners: '合作夥伴',
-      partnersNote: '與我們共同舉辦活動、合作專案的組織',
     },
     problem: {
       kicker: '01 · 問題所在',
@@ -233,7 +222,6 @@ export const HOME = {
       kicker: '從這裡開始',
       title: '告訴我們你想拓展的市場。',
       body: '從 30 分鐘的免費諮詢開始。我們會一起檢視你的目標市場、目前的數位形象，以及最快被找到的方法。',
-      checks: ['沒有任何義務，也不推銷', '可使用英文、法文或中文', '涵蓋台灣、中東歐與歐盟'],
       primary: '預約免費諮詢',
       secondary: '查看服務內容',
     },

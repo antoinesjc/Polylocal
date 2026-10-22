@@ -1,5 +1,5 @@
-// Homepage styles. Brand colours from polylocal.eu:
-// terracotta #B57A72, sky #81AEC4, slate #718891, plus a deep ink and warm ivory.
+// Styles shared by every page widget (homepage, service pages, ...).
+// Brand colours from polylocal.eu: terracotta #B57A72, sky #81AEC4, slate #718891, plus deep ink #17222A and warm ivory.
 export default `
 :host{
   --ink:#17222A; --ink-2:#111A20; --ivory:#F6F3EF; --sand:#ECE6DF; --line:#DCD5CD; --line-2:#E2DBD3;

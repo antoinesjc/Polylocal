@@ -7,6 +7,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 | Widget | Script | What it is |
 | --- | --- | --- |
 | `<polylocal-home>` | `dist/polylocal-home.js` | The whole homepage: hero, map, press and partners, problem, two directions, services, process, team, insights, call to action |
+| `<polylocal-digital-marketing>` | `dist/polylocal-digital-marketing.js` | The Digital Marketing service page |
 | `<polylocal-map>` | `dist/polylocal-map.js` | The interactive Europe and Asia map on its own (already included in the homepage) |
 
 ![Brussels selected with the Europe zoom (English), and Taipei selected (Traditional Chinese)](demo/preview.png)
@@ -36,6 +37,17 @@ If the published page stays empty, Odoo has removed the `<script>` line. Put tha
 ### Links the homepage uses
 
 These must exist on the Odoo site (they do today): `/digital-marketing`, `/b2b-lead-generation`, `/about-us`, `/contactus`, `/blog`, `/blog/taiwan-market-trends-15`, `/blog/b2b-14`, `/blog/case-studies-11`. The "Book a free consultation" button goes to `/contactus`, so Odoo's own contact form keeps handling enquiries.
+
+## Add the Digital Marketing page
+
+Same steps as the homepage, on the `/digital-marketing` page, with:
+
+```html
+<polylocal-digital-marketing></polylocal-digital-marketing>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@COMMIT/widgets/dist/polylocal-digital-marketing.js" defer></script>
+```
+
+Its buttons go to `/contactus` and `/b2b-lead-generation` (with `/zh_TW` on the Chinese site).
 
 ## Add only the map
 
@@ -72,7 +84,9 @@ Anything starting with `zh` shows Chinese; everything else shows English. The lo
 All wording lives in one file per widget, with English and Chinese side by side:
 
 - Homepage: [`src/home/i18n.js`](src/home/i18n.js)
+- Digital Marketing: [`src/digital-marketing/i18n.js`](src/digital-marketing/i18n.js)
 - Map: [`src/map/i18n.js`](src/map/i18n.js)
+- Shared by all pages (logo strip labels, closing checklist, "Contact us"): [`src/shared/common.js`](src/shared/common.js)
 
 Then rebuild:
 
@@ -86,7 +100,7 @@ Commit and push the updated `dist/` files, then change the version code after `@
 
 ## Adding a new widget
 
-1. Create `src/<name>/` with the component, an `i18n.js` holding `en` and `zh-TW` text, and use `detectLang`, `localHref` and `watchLang` from `src/shared/lang.js` so it switches language like the others.
+1. Create `src/<name>/` with the component and an `i18n.js` holding `en` and `zh-TW` text. A full page extends `PolylocalPage` from `src/shared/page.js`, which handles language switching, full-width layout, the press and partner strip (`h.proof()`) and the closing call to action (`h.cta()`). A smaller widget uses `detectLang`, `localHref` and `watchLang` from `src/shared/lang.js`.
 2. Add it to the list in `scripts/build.mjs`.
 3. Add a demo page in `demo/`.
 
@@ -100,6 +114,7 @@ Regions, cities and framing are set in [`scripts/build-map-data.mjs`](scripts/bu
 cd widgets
 python3 -m http.server 8000
 # homepage: http://localhost:8000/demo/home.html
+# digital marketing: http://localhost:8000/demo/digital-marketing.html
 # map only: http://localhost:8000/demo/map.html
 ```
 
@@ -111,8 +126,9 @@ Both demo pages have buttons to switch the page language between English and 繁
 widgets/
 ├── dist/                    the files the website loads
 ├── assets/logos/            press and partner logos (single-colour)
-├── src/shared/lang.js       language detection and links, shared by all widgets
-├── src/home/                homepage widget, its text and styles
+├── src/shared/               language detection, page base, shared styles and text
+├── src/home/                homepage widget and its text
+├── src/digital-marketing/   Digital Marketing page widget, its text and styles
 ├── src/map/                 map widget, its text and generated map shapes
 ├── scripts/                 map data and bundle builders
 └── demo/                    local preview pages
