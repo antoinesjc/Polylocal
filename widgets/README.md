@@ -21,7 +21,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 
 ```html
 <polylocal-home></polylocal-home>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@6495009dd11b60d60a9a95ec7440098b2d136d5a/widgets/dist/polylocal-home.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@366d33eb95d12cdcc4de58fe6a8b00fc1843b497/widgets/dist/polylocal-home.js" defer></script>
 ```
 
 (The code after `@` pins this exact version of the widget.)
@@ -41,7 +41,7 @@ These must exist on the Odoo site (they do today): `/digital-marketing`, `/b2b-l
 
 ```html
 <polylocal-map></polylocal-map>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@6495009dd11b60d60a9a95ec7440098b2d136d5a/widgets/dist/polylocal-map.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@366d33eb95d12cdcc4de58fe6a8b00fc1843b497/widgets/dist/polylocal-map.js" defer></script>
 ```
 
 | Map attribute | Values | Default |
