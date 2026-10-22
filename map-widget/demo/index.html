@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polylocal map widget demo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #17222A; color: #fff; font-family: Manrope, sans-serif; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 32px 16px 80px; }
+  .demo-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-bottom: 24px; font-size: 14px; }
+  .demo-bar button { font: inherit; font-weight: 700; padding: 10px 16px; border-radius: 999px; border: 1px solid rgba(255,255,255,.3); background: transparent; color: #fff; cursor: pointer; }
+  .light { background: #F6F3EF; color: #17222A; padding: 32px 16px; margin-top: 48px; border-radius: 4px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="demo-bar">
+    <span>Simulate the site language:</span>
+    <button type="button" onclick="document.documentElement.lang='en'">English</button>
+    <button type="button" onclick="document.documentElement.lang='zh-TW'">繁體中文</button>
+  </div>
+
+  <!-- This is exactly what goes on the website -->
+  <polylocal-map></polylocal-map>
+
+  <div class="light">
+    <p>Light theme, Brussels selected:</p>
+    <polylocal-map theme="light" hub="brussels"></polylocal-map>
+  </div>
+</div>
+<script src="../dist/polylocal-map.js"></script>
+</body>
+</html>
