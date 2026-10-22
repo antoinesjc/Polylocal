@@ -20,9 +20,9 @@ export default {
       { type: 'speakers', h: 'Three perspectives on Europe', items: [
         { tag: 'Strategy', title: 'Why Taiwan–Europe cooperation matters', text: 'The geopolitical and economic context, and the value of long-term, trust-based frameworks between Taiwan and Europe.', who: 'Yuchi Chang & Laura Bonsaver', org: 'Taiwan-Asia Exchange Foundation' },
         { tag: 'Market entry', title: 'Germany as a gateway to Europe', text: 'What companies should weigh when they consider Germany as the starting point of their European expansion.', who: 'Philipp Marxen' },
-        { tag: 'Central Europe', title: 'Poland’s growing role in the EU', text: 'Why Poland is an increasingly attractive and accessible base for Taiwanese companies building wider EU operations.', who: 'Polylocal', dark: true },
+        { tag: 'Central Europe', title: 'Poland’s growing role in the EU', text: 'Why Poland is an increasingly attractive and accessible base for Taiwanese companies building wider EU operations.', who: 'Dorota Maczuga', org: 'Polylocal', dark: true },
       ] },
-      { type: 'gallery', photos: ['first-event-1.jpg', 'first-event-2.jpg', 'first-event-3.jpg', 'first-event-4.jpg'], alt: 'A full room listening to the talks at Polylocal’s first event', caption: 'A full room for the talks, and plenty of questions afterwards.' },
+      { type: 'gallery', photos: ['first-event-1.jpg', 'first-event-8.jpg', 'first-event-7.jpg', 'first-event-3.jpg', 'first-event-2.jpg', 'first-event-9.jpg', 'first-event-4.jpg'], alt: 'A full room listening to the talks at Polylocal’s first event', caption: 'A full room for the talks, and plenty of questions afterwards.' },
       { type: 'prose', h: 'The best part came after the talks', p: [
         'The networking session ran long, and it became one of the highlights of the night. People compared experiences, swapped contacts and explored collaborations in an open, informal atmosphere.',
       ] },
@@ -51,9 +51,9 @@ export default {
       { type: 'speakers', h: '看歐洲的三個角度', items: [
         { tag: '策略', title: '為何台歐合作至關重要', text: '地緣政治與經濟背景，以及台灣與歐洲之間長期、以信任為基礎的合作框架的價值。', who: 'Yuchi Chang & Laura Bonsaver', org: 'Taiwan-Asia Exchange Foundation' },
         { tag: '市場進入', title: '以德國作為進入歐洲的門戶', text: '企業將德國視為歐洲拓展起點時，需要考量的實際因素。', who: 'Philipp Marxen' },
-        { tag: '中歐', title: '波蘭在歐盟日益重要的角色', text: '為何波蘭逐漸成為台灣企業拓展歐盟業務時，具吸引力且容易進入的據點。', who: 'Polylocal', dark: true },
+        { tag: '中歐', title: '波蘭在歐盟日益重要的角色', text: '為何波蘭逐漸成為台灣企業拓展歐盟業務時，具吸引力且容易進入的據點。', who: 'Dorota Maczuga', org: 'Polylocal', dark: true },
       ] },
-      { type: 'gallery', photos: ['first-event-1.jpg', 'first-event-2.jpg', 'first-event-3.jpg', 'first-event-4.jpg'], alt: 'Polylocal 第一場活動，滿場來賓聆聽演講', caption: '演講時座無虛席，結束後提問不斷。' },
+      { type: 'gallery', photos: ['first-event-1.jpg', 'first-event-8.jpg', 'first-event-7.jpg', 'first-event-3.jpg', 'first-event-2.jpg', 'first-event-9.jpg', 'first-event-4.jpg'], alt: 'Polylocal 第一場活動，滿場來賓聆聽演講', caption: '演講時座無虛席，結束後提問不斷。' },
       { type: 'prose', h: '最精彩的部分在演講之後', p: [
         '交流時間比預期更長，也成為當晚的亮點之一。與會者交換經驗、互留聯絡方式，並在開放輕鬆的氛圍中探索合作的可能。',
       ] },
