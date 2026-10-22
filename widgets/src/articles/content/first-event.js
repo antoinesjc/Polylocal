@@ -10,7 +10,7 @@ export default {
     tags: ['Event recap'],
     title: ['Our first public event: a full room for', 'Taiwan–Europe business', ''],
     dek: 'Around 40 professionals, three talks, and a basement dance studio turned into a networking space.',
-    facts: [['When', 'March 2026'], ['Attendance', 'About 40 people'], ['Prepared in', 'Under 3 weeks']],
+    facts: [['When', 'February 2026'], ['Attendance', 'About 40 people'], ['Prepared in', 'Under 3 weeks']],
     body: [
       { type: 'lead', text: 'Polylocal’s first public event brought together around 40 people for an evening on one question: how Taiwanese companies can enter and grow in European markets.' },
       { type: 'prose', p: [
@@ -41,7 +41,7 @@ export default {
     tags: ['活動回顧'],
     title: ['我們的第一場公開活動：', '台歐商業交流，座無虛席', ''],
     dek: '約 40 位專業人士、三場演講，以及一間改造成交流空間的地下室舞蹈教室。',
-    facts: [['時間', '2026 年 3 月'], ['出席', '約 40 人'], ['籌備時間', '不到 3 週']],
+    facts: [['時間', '2026 年 2 月'], ['出席', '約 40 人'], ['籌備時間', '不到 3 週']],
     body: [
       { type: 'lead', text: 'Polylocal 的第一場公開活動聚集了約 40 人，整晚圍繞一個問題：台灣企業如何進入並拓展歐洲市場。' },
       { type: 'prose', p: [

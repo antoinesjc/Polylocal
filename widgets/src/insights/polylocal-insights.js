@@ -178,7 +178,6 @@ class PolylocalInsights extends PolylocalPage {
         <p class="ins-sub">${esc(t.events.body)}</p>
       </div>
       <div class="event-grid">${events.map(eventCard).join('') || `<p class="empty">${esc(t.empty)}</p>`}</div>
-      <a class="all-link" href="${h.L('/blog')}">${esc(t.allPosts)}${arrow}</a>
     </div>
   </section>
 
