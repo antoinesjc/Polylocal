@@ -23,7 +23,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 
 ```html
 <polylocal-home></polylocal-home>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@930b7e793c997fb190819a26f510f6e65a4015e8/widgets/dist/polylocal-home.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@8393b4608c01a4c1f762acb1742efd64476eb0c0/widgets/dist/polylocal-home.js" defer></script>
 ```
 
 (The code after `@` pins this exact version of the widget.)
@@ -45,7 +45,7 @@ Same steps as the homepage, on the `/digital-marketing` page, with:
 
 ```html
 <polylocal-digital-marketing></polylocal-digital-marketing>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@930b7e793c997fb190819a26f510f6e65a4015e8/widgets/dist/polylocal-digital-marketing.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@8393b4608c01a4c1f762acb1742efd64476eb0c0/widgets/dist/polylocal-digital-marketing.js" defer></script>
 ```
 
 Its buttons go to `/contactus` and `/b2b-lead-generation` (with `/zh_TW` on the Chinese site).
@@ -56,7 +56,7 @@ Same steps as the homepage, on the `/b2b-lead-generation` page, with:
 
 ```html
 <polylocal-lead-generation></polylocal-lead-generation>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@930b7e793c997fb190819a26f510f6e65a4015e8/widgets/dist/polylocal-lead-generation.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@8393b4608c01a4c1f762acb1742efd64476eb0c0/widgets/dist/polylocal-lead-generation.js" defer></script>
 ```
 
 Its buttons go to `/contactus` and `/digital-marketing` (with `/zh_TW` on the Chinese site).
@@ -65,7 +65,7 @@ Its buttons go to `/contactus` and `/digital-marketing` (with `/zh_TW` on the Ch
 
 ```html
 <polylocal-map></polylocal-map>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@930b7e793c997fb190819a26f510f6e65a4015e8/widgets/dist/polylocal-map.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@8393b4608c01a4c1f762acb1742efd64476eb0c0/widgets/dist/polylocal-map.js" defer></script>
 ```
 
 | Map attribute | Values | Default |
