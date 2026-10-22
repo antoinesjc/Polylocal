@@ -22,7 +22,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 
 ```html
 <polylocal-home></polylocal-home>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@366d33eb95d12cdcc4de58fe6a8b00fc1843b497/widgets/dist/polylocal-home.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@951e43241cb1b2fa2dfafab95314777fc29f6495/widgets/dist/polylocal-home.js" defer></script>
 ```
 
 (The code after `@` pins this exact version of the widget.)
@@ -44,7 +44,7 @@ Same steps as the homepage, on the `/digital-marketing` page, with:
 
 ```html
 <polylocal-digital-marketing></polylocal-digital-marketing>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@COMMIT/widgets/dist/polylocal-digital-marketing.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@951e43241cb1b2fa2dfafab95314777fc29f6495/widgets/dist/polylocal-digital-marketing.js" defer></script>
 ```
 
 Its buttons go to `/contactus` and `/b2b-lead-generation` (with `/zh_TW` on the Chinese site).
@@ -53,7 +53,7 @@ Its buttons go to `/contactus` and `/b2b-lead-generation` (with `/zh_TW` on the 
 
 ```html
 <polylocal-map></polylocal-map>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@366d33eb95d12cdcc4de58fe6a8b00fc1843b497/widgets/dist/polylocal-map.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@951e43241cb1b2fa2dfafab95314777fc29f6495/widgets/dist/polylocal-map.js" defer></script>
 ```
 
 | Map attribute | Values | Default |
