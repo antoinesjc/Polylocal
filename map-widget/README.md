@@ -20,10 +20,10 @@ It speaks **English** and **Traditional Chinese (Taiwan)** and picks the languag
 
 ```html
 <polylocal-map></polylocal-map>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@main/map-widget/dist/polylocal-map.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@v1.0.0/map-widget/dist/polylocal-map.js" defer></script>
 ```
 
-4. Save. Switch the site to 繁體中文 to check the Chinese version: no second embed is needed.
+4. Save, then view the published page (Odoo does not run embedded scripts while you are in edit mode, so the block looks empty in the editor). Switch the site to 繁體中文 to check the Chinese version: no second embed is needed.
 
 If Odoo strips the `<script>` tag, put the script line in **Website > Configuration > Settings > Custom Code (head)** instead, and keep only `<polylocal-map></polylocal-map>` in the Embed Code block.
 
@@ -66,7 +66,7 @@ npm install      # first time only
 npm run build    # writes dist/polylocal-map.js
 ```
 
-Commit the updated `dist/polylocal-map.js`. jsDelivr can cache `@main` for up to a day; to publish instantly, tag a release (`git tag v1.0.1 && git push --tags`) and point the script at `@v1.0.1`.
+Commit the updated `dist/polylocal-map.js`, tag a new version (`git tag v1.0.1 && git push --tags`) and change `@v1.0.0` to `@v1.0.1` in the Odoo embed. Using a version tag means the site always loads exactly that version, with no CDN caching surprises.
 
 ## Changing the map
 
