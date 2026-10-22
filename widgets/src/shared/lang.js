@@ -37,7 +37,7 @@ export function loadFonts() {
   const link = document.createElement('link');
   link.id = 'polylocal-fonts';
   link.rel = 'stylesheet';
-  link.href = 'https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Open+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&display=swap';
+  link.href = 'https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Quicksand:wght@700&family=Open+Sans:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700&display=swap';
   document.head.appendChild(link);
 }
 

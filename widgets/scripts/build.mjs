@@ -14,6 +14,7 @@ const WIDGETS = [
   { entry: '../src/about/polylocal-about.js', out: '../dist/polylocal-about.js', name: 'polylocal-about' },
   { entry: '../src/insights/polylocal-insights.js', out: '../dist/polylocal-insights.js', name: 'polylocal-insights' },
   { entry: '../src/contact/polylocal-contact.js', out: '../dist/polylocal-contact.js', name: 'polylocal-contact' },
+  { entry: '../src/footer/polylocal-footer.js', out: '../dist/polylocal-footer.js', name: 'polylocal-footer' },
   { entry: '../src/articles/polylocal-article.js', out: '../dist/polylocal-article.js', name: 'polylocal-article' },
 ];
 

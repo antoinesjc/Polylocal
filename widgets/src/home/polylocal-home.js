@@ -96,7 +96,7 @@ ${h.proof()}
 
   <section class="sand">
     <div class="wrap">
-      <div class="head-row tight"><h2 class="mid">${esc(t.insights.title)}</h2><a class="underline" href="${L('/blog')}">${esc(t.insights.all)}${icons.arrow}</a></div>
+      <div class="head-row tight"><h2 class="mid">${esc(t.insights.title)}</h2><a class="underline" href="${L('/insight')}">${esc(t.insights.all)}${icons.arrow}</a></div>
       <div class="insights">
         ${t.insights.cards.map((c, i) => `
         <a class="insight i${i}" href="${L(c.href)}">

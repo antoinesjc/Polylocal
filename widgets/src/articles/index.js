@@ -14,7 +14,7 @@ export const ARTICLES = Object.fromEntries(
 // Text around the articles (breadcrumbs, labels), in both languages.
 export const LABELS = {
   en: {
-    insights: ['Insights', '/blog'],
+    insights: ['Insights', '/insight'],
     categories: { cases: ['Case studies', '/blog/case-studies-11'], updates: ['Polylocal updates', '/blog/polylocal-updates-4'] },
     breadcrumb: 'Breadcrumb',
     toc: 'In this case study',
@@ -25,7 +25,7 @@ export const LABELS = {
     missing: 'This article could not be found. Check the article name in the embed code.',
   },
   'zh-TW': {
-    insights: ['洞察', '/blog'],
+    insights: ['洞察', '/insight'],
     categories: { cases: ['案例研究', '/blog/case-studies-11'], updates: ['Polylocal 最新消息', '/blog/polylocal-updates-4'] },
     breadcrumb: '導覽路徑',
     toc: '本篇內容',

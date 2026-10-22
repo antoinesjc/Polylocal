@@ -10,6 +10,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 | `<polylocal-digital-marketing>` | `dist/polylocal-digital-marketing.js` | The Digital Marketing service page |
 | `<polylocal-lead-generation>` | `dist/polylocal-lead-generation.js` | The B2B Lead Generation service page |
 | `<polylocal-about>` | `dist/polylocal-about.js` | The About page |
+| `<polylocal-footer>` | `dist/polylocal-footer.js` | The site footer, wrapped around Odoo's own newsletter form |
 | `<polylocal-contact>` | `dist/polylocal-contact.js` | The Contact page, wrapped around Odoo's own contact form |
 | `<polylocal-insights>` | `dist/polylocal-insights.js` | The Insights page: case studies, then events, updated from the blog |
 | `<polylocal-article>` | `dist/polylocal-article.js` | Blog articles: case studies and event recaps |
@@ -81,6 +82,17 @@ Same steps as the homepage, on the `/about-us` page, with:
 ```
 
 It names no individual team members, by design.
+
+## Add the footer
+
+The footer is shared by every page, so this is done once. In the editor, scroll to the footer and keep the existing footer block that holds the **Newsletter** subscribe form. Above it, drop one **Embed Code** block (padding 0) with:
+
+```html
+<polylocal-footer></polylocal-footer>
+<script src="https://antoinesjc.github.io/Polylocal/widgets/dist/polylocal-footer.js" defer></script>
+```
+
+On the published site the widget moves Odoo's subscribe form into its newsletter card, hides the rest of the old footer block and restyles Odoo's copyright bar (which keeps the language switcher) in the same dark colours. Subscriptions still go to the Odoo mailing list as before. In the editor you still see and edit the old footer block.
 
 ## Add the Contact page
 
