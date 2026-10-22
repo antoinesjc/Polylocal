@@ -77,7 +77,7 @@ export const DM = {
       cards: [
         { tone: 'clay', name: 'Taiwan & Asia', alt: '台灣', langs: 'Traditional Chinese · English', items: ['Google search in Taiwan', 'LINE and Facebook presence', 'LinkedIn for B2B decision-makers', 'Local trade and business media'] },
         { tone: 'clay-dk', name: 'Poland & CEE', alt: 'PL', langs: 'Polish · English', items: ['Polish-language search visibility', 'LinkedIn for regional buyers', 'Trade fairs and business associations', 'Sector press across the region'] },
-        { tone: 'sky', name: 'Brussels & the EU', alt: 'EU', langs: 'English · French · Dutch', items: ['Visibility with EU institutions and policymakers', 'EU affairs and trade association networks', 'EU-level and sector media', 'Reach across all 27 member states'] },
+        { tone: 'sky', name: 'Brussels & the EU', alt: 'EU', langs: 'English · French · German', items: ['Visibility with EU institutions and policymakers', 'EU affairs and trade association networks', 'EU-level and sector media', 'Reach across all 27 member states'] },
       ],
     },
     faq: {
@@ -171,7 +171,7 @@ export const DM = {
       cards: [
         { tone: 'clay', name: '台灣與亞洲', alt: 'Taiwan', langs: '繁體中文 · 英文', items: ['台灣的 Google 搜尋', 'LINE 與 Facebook 經營', '觸及 B2B 決策者的 LinkedIn', '在地產業與商業媒體'] },
         { tone: 'clay-dk', name: '波蘭與中東歐', alt: 'PL', langs: '波蘭文 · 英文', items: ['波蘭語搜尋能見度', '觸及區域買家的 LinkedIn', '商展與商會', '區域產業媒體'] },
-        { tone: 'sky', name: '布魯塞爾與歐盟', alt: 'EU', langs: '英文 · 法文 · 荷蘭文', items: ['觸及歐盟機構與政策制定者', '歐盟事務與產業公會網絡', '歐盟層級與產業媒體', '覆蓋全部 27 個會員國'] },
+        { tone: 'sky', name: '布魯塞爾與歐盟', alt: 'EU', langs: '英文 · 法文 · 德文', items: ['觸及歐盟機構與政策制定者', '歐盟事務與產業公會網絡', '歐盟層級與產業媒體', '覆蓋全部 27 個會員國'] },
       ],
     },
     faq: {

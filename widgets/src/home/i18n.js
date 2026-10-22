@@ -93,7 +93,7 @@ export const HOME = {
         { big: '中文', zh: true, title: 'Native-level Mandarin', text: 'Content and outreach written for Taiwanese readers, not translated for them.' },
         { big: 'WAW', title: 'Present in Warsaw', text: 'From the Taiwan Expo in Warsaw to the Formosa Meetups we co-organise.' },
         { big: 'EU', title: 'Inside the EU bubble', text: 'Experience working with and within the EU institutions in Brussels.' },
-        { big: 'EN · FR · ES · 中', title: 'Multilingual by default', text: 'We work in the languages your buyers and partners use.' },
+        { big: 'EN · FR · 中 · PL · ES · DE', title: 'Multilingual by default', text: 'We work in English, French, Mandarin, Polish, Spanish and German.' },
       ],
     },
     insights: {
@@ -205,7 +205,7 @@ export const HOME = {
         { big: '中文', zh: true, title: '母語等級的中文', text: '內容與開發聯繫專為台灣讀者撰寫，而不是翻譯而來。' },
         { big: 'WAW', title: '立足華沙', text: '從波蘭台灣形象展，到我們共同舉辦的 Formosa Meetup。' },
         { big: 'EU', title: '熟悉歐盟體系', text: '具備與歐盟機構合作、並在其中工作的經驗。' },
-        { big: 'EN · FR · ES · 中', title: '多語言是基本配備', text: '我們使用你的買家與合作夥伴所使用的語言工作。' },
+        { big: 'EN · FR · 中 · PL · ES · DE', title: '多語言是基本配備', text: '我們能以英文、法文、中文、波蘭文、西班牙文與德文工作。' },
       ],
     },
     insights: {

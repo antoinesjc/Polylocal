@@ -7,7 +7,7 @@ export const COMMON = {
       partners: 'Partners',
       partnersNote: 'Organisations we co-organise events and run projects with',
     },
-    checks: ['No obligation, no sales pitch', 'In English, French or Mandarin', 'Taiwan, Central & Eastern Europe and the EU'],
+    checks: ['No obligation, no sales pitch', 'In English, French, Mandarin, Polish, Spanish or German', 'Taiwan, Central & Eastern Europe and the EU'],
     contact: 'Contact us',
   },
   'zh-TW': {
@@ -16,7 +16,7 @@ export const COMMON = {
       partners: '合作夥伴',
       partnersNote: '與我們共同舉辦活動、合作專案的組織',
     },
-    checks: ['沒有任何義務，也不推銷', '可使用英文、法文或中文', '涵蓋台灣、中東歐與歐盟'],
+    checks: ['沒有任何義務，也不推銷', '可使用英文、法文、中文、波蘭文、西班牙文或德文', '涵蓋台灣、中東歐與歐盟'],
     contact: '聯絡我們',
   },
 };

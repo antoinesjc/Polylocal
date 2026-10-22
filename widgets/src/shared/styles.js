@@ -146,6 +146,7 @@ a:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
 .tile-big{font-family:var(--display);font-size:30px;font-weight:800;letter-spacing:-.02em;line-height:1.2}
 .tile-big.zh{font-family:var(--zh-serif);color:var(--clay-lt)}
 .tile.t1 .tile-big{color:var(--clay-dk)} .tile.t2 .tile-big{color:var(--sky-dk)} .tile.t3 .tile-big{color:var(--ink)}
+.tile.t3 .tile-big{font-size:20px;letter-spacing:0;white-space:nowrap;line-height:1.8}
 .tile h3{font-size:19px;color:var(--ink)} .tile.t0 h3{color:#fff}
 .tile p{font-size:14px;line-height:1.55;color:var(--muted)} .tile.t0 p{color:rgba(255,255,255,.75)}
 
