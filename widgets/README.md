@@ -8,6 +8,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 | --- | --- | --- |
 | `<polylocal-home>` | `dist/polylocal-home.js` | The whole homepage: hero, map, press and partners, problem, two directions, services, process, team, insights, call to action |
 | `<polylocal-digital-marketing>` | `dist/polylocal-digital-marketing.js` | The Digital Marketing service page |
+| `<polylocal-lead-generation>` | `dist/polylocal-lead-generation.js` | The B2B Lead Generation service page |
 | `<polylocal-map>` | `dist/polylocal-map.js` | The interactive Europe and Asia map on its own (already included in the homepage) |
 
 ![Brussels selected with the Europe zoom (English), and Taipei selected (Traditional Chinese)](demo/preview.png)
@@ -49,6 +50,17 @@ Same steps as the homepage, on the `/digital-marketing` page, with:
 
 Its buttons go to `/contactus` and `/b2b-lead-generation` (with `/zh_TW` on the Chinese site).
 
+## Add the B2B Lead Generation page
+
+Same steps as the homepage, on the `/b2b-lead-generation` page, with:
+
+```html
+<polylocal-lead-generation></polylocal-lead-generation>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@COMMIT/widgets/dist/polylocal-lead-generation.js" defer></script>
+```
+
+Its buttons go to `/contactus` and `/digital-marketing` (with `/zh_TW` on the Chinese site).
+
 ## Add only the map
 
 ```html
@@ -85,6 +97,7 @@ All wording lives in one file per widget, with English and Chinese side by side:
 
 - Homepage: [`src/home/i18n.js`](src/home/i18n.js)
 - Digital Marketing: [`src/digital-marketing/i18n.js`](src/digital-marketing/i18n.js)
+- B2B Lead Generation: [`src/lead-generation/i18n.js`](src/lead-generation/i18n.js)
 - Map: [`src/map/i18n.js`](src/map/i18n.js)
 - Shared by all pages (logo strip labels, closing checklist, "Contact us"): [`src/shared/common.js`](src/shared/common.js)
 
@@ -115,6 +128,7 @@ cd widgets
 python3 -m http.server 8000
 # homepage: http://localhost:8000/demo/home.html
 # digital marketing: http://localhost:8000/demo/digital-marketing.html
+# b2b lead generation: http://localhost:8000/demo/lead-generation.html
 # map only: http://localhost:8000/demo/map.html
 ```
 
@@ -129,6 +143,7 @@ widgets/
 ├── src/shared/               language detection, page base, shared styles and text
 ├── src/home/                homepage widget and its text
 ├── src/digital-marketing/   Digital Marketing page widget, its text and styles
+├── src/lead-generation/     B2B Lead Generation page widget, its text and styles
 ├── src/map/                 map widget, its text and generated map shapes
 ├── scripts/                 map data and bundle builders
 └── demo/                    local preview pages
