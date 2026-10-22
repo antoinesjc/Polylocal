@@ -22,9 +22,11 @@ export default {
         { tag: 'Market entry', title: 'Germany as a gateway to Europe', text: 'What companies should weigh when they consider Germany as the starting point of their European expansion.', who: 'Philipp Marxen' },
         { tag: 'Central Europe', title: 'Poland’s growing role in the EU', text: 'Why Poland is an increasingly attractive and accessible base for Taiwanese companies building wider EU operations.', who: 'Polylocal', dark: true },
       ] },
+      { type: 'gallery', photos: ['first-event-1.jpg', 'first-event-2.jpg', 'first-event-3.jpg', 'first-event-4.jpg'], alt: 'A full room listening to the talks at Polylocal’s first event', caption: 'A full room for the talks, and plenty of questions afterwards.' },
       { type: 'prose', h: 'The best part came after the talks', p: [
         'The networking session ran long, and it became one of the highlights of the night. People compared experiences, swapped contacts and explored collaborations in an open, informal atmosphere.',
       ] },
+      { type: 'gallery', grid: true, photos: ['first-event-5.jpg', 'first-event-6.jpg'], alt: 'Guests talking after the event', caption: 'After the talks: the conversations kept going.' },
       { type: 'quote', text: 'Even in a tense geopolitical climate, there is strong demand for human-scale connections built on dialogue.' },
       { type: 'list', h: 'What we took away', items: [
         'Taiwanese companies are actively looking at Europe, and want practical, country-level guidance.',
@@ -51,9 +53,11 @@ export default {
         { tag: '市場進入', title: '以德國作為進入歐洲的門戶', text: '企業將德國視為歐洲拓展起點時，需要考量的實際因素。', who: 'Philipp Marxen' },
         { tag: '中歐', title: '波蘭在歐盟日益重要的角色', text: '為何波蘭逐漸成為台灣企業拓展歐盟業務時，具吸引力且容易進入的據點。', who: 'Polylocal', dark: true },
       ] },
+      { type: 'gallery', photos: ['first-event-1.jpg', 'first-event-2.jpg', 'first-event-3.jpg', 'first-event-4.jpg'], alt: 'Polylocal 第一場活動，滿場來賓聆聽演講', caption: '演講時座無虛席，結束後提問不斷。' },
       { type: 'prose', h: '最精彩的部分在演講之後', p: [
         '交流時間比預期更長，也成為當晚的亮點之一。與會者交換經驗、互留聯絡方式，並在開放輕鬆的氛圍中探索合作的可能。',
       ] },
+      { type: 'gallery', grid: true, photos: ['first-event-5.jpg', 'first-event-6.jpg'], alt: '活動結束後來賓交流', caption: '演講結束後，交流仍在持續。' },
       { type: 'quote', text: '即使在緊張的地緣政治氛圍中，人們對以對話為基礎、有溫度的連結仍有強烈需求。' },
       { type: 'list', h: '我們的收穫', items: [
         '台灣企業正積極關注歐洲，並希望獲得具體到國家層級的實用建議。',

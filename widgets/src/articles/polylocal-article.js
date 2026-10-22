@@ -109,11 +109,17 @@ class PolylocalArticle extends PolylocalPage {
       case 'trio': return `<p class="eyebrow">${esc(b.kicker)}</p><div class="trio">${b.items.map((x) => `<div class="trio-card"><span class="trio-r">R</span><h3>${esc(x)}</h3></div>`).join('')}</div>`;
       case 'feature': return `<div class="feature"><span class="feature-kicker">${esc(b.kicker)}</span><h2>${esc(b.title)}</h2>${b.p.map((x) => `<p>${esc(x)}</p>`).join('')}</div>`;
       case 'gallery': {
+        // photos: file names in assets/photos/. The first is shown large unless
+        // `grid: true`; the rest sit in a row of up to three. `ratio` sets the
+        // shape of the smaller photos (default 4/3; use '3/4' for portrait shots).
         const src = (f) => esc(assetUrl(`photos/${f}`, this));
-        const [first, ...rest] = b.photos;
-        return `<figure class="gallery g${b.photos.length}">
-          <img class="g-main" src="${src(first)}" alt="${esc(b.alt)}" loading="lazy">
-          ${rest.length ? `<div class="g-grid">${rest.map((f) => `<img src="${src(f)}" alt="${esc(b.alt)}" loading="lazy">`).join('')}</div>` : ''}
+        const img = (f) => `<img src="${src(f)}" alt="${esc(b.alt)}" loading="lazy">`;
+        const [first, ...rest] = b.grid ? [null, ...b.photos] : b.photos;
+        const style = `--cols:${Math.min(rest.length, 3)};--ratio:${esc(b.ratio || '4/3')}`;
+        return `<figure class="gallery">
+          ${b.h ? `<h2>${esc(b.h)}</h2>` : ''}
+          ${first ? `<div class="g-main">${img(first)}</div>` : ''}
+          ${rest.length ? `<div class="g-grid${first ? '' : ' g-only'}" style="${style}">${rest.map(img).join('')}</div>` : ''}
           ${b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : ''}
         </figure>`;
       }

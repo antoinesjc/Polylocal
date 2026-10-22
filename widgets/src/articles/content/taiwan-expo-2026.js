@@ -10,7 +10,7 @@ export default {
     tags: ['Event recap', 'Warsaw · Poland'],
     title: ['Taiwan Expo 2026 in Warsaw:', 'on the floor, and at the Formosa Meetup', ''],
     dek: 'Why Warsaw was the right room this year, how we helped exhibitors talk to European visitors, and the community evening that followed.',
-    facts: [['When', 'June 2026'], ['Our role', 'Interpretation for exhibitors'], ['Plus', 'Formosa Meetup Warsaw']],
+    facts: [['When', '22–24 June 2026, EXPO XXI'], ['Our role', 'Interpretation for exhibitors'], ['Plus', 'Formosa Meetup Warsaw']],
     body: [
       { type: 'trio', kicker: 'This year’s theme: the 3R framework', items: ['Resilient supply chains', 'Reliable partnerships', 'Rebuilding Ukraine'] },
       { type: 'prose', h: 'Warsaw, at the centre of something bigger', p: [
@@ -21,10 +21,12 @@ export default {
         'We came to connect, and ran into old friends from both Taiwan and Poland. But we also came to work: throughout the Expo, we provided interpretation between Taiwanese exhibitors and European visitors, so ideas actually landed across the language barrier.',
         'It’s a small, direct example of what Polylocal does: not cross-cultural strategy from a distance, but showing up and making the exchange happen.',
       ] },
+      { type: 'gallery', photos: ['taiwan-expo-3.jpg', 'taiwan-expo-1.jpg', 'taiwan-expo-2.jpg', 'taiwan-expo-4.jpg', 'taiwan-expo-5.jpg', 'taiwan-expo-6.jpg', 'taiwan-expo-7.jpg'], ratio: '4/5', alt: 'Taiwan Expo Europe 2026 at EXPO XXI in Warsaw', caption: 'Taiwan Expo Europe 2026 at EXPO XXI, Warsaw: the main stage, the opening ceremony, and the Smart Energy, Unmanned Vehicles & Security and City Development pavilions.' },
       { type: 'feature', kicker: 'The day after · with Formosa Network', title: 'Formosa Meetup Warsaw', p: [
         'As partners of Formosa Network, we co-organised an evening of drinks for Warsaw’s Taiwanese community and Polish people with their own ties to Taiwan: former students, professionals who lived there, and people who simply fell for the island.',
         'Conversations jumped between Mandarin, Polish and English. Night markets, mountain hikes, bureaucratic adventures, and the odd joy of finding bubble tea in a Central European city.',
       ] },
+      { type: 'gallery', grid: true, photos: ['formosa-meetup-1.jpg', 'formosa-meetup-2.jpg'], alt: 'Formosa Meetup Warsaw', caption: 'Formosa Meetup Warsaw, co-organised with Formosa Network.' },
       { type: 'quote', text: 'The relationship between Taiwan and Poland is deepening, in business, and in the people-to-people ties that make it last.' },
       { type: 'prose', h: 'Why it matters', p: [
         'What struck us most was the direction of travel. Supply chains, tech partnerships and investment, yes. But also culture and education, the ties that make international relationships resilient over time. It’s the space we want to keep working in.',
@@ -37,7 +39,7 @@ export default {
     tags: ['活動回顧', '波蘭 · 華沙'],
     title: ['2026 歐洲台灣形象展在華沙：', '展場內外與 Formosa Meetup', ''],
     dek: '為何今年華沙是對的地方、我們如何協助參展商與歐洲訪客溝通，以及隨後的社群之夜。',
-    facts: [['時間', '2026 年 6 月'], ['我們的角色', '為參展商提供口譯'], ['加碼', 'Formosa Meetup 華沙場']],
+    facts: [['時間', '2026 年 6 月 22–24 日，EXPO XXI'], ['我們的角色', '為參展商提供口譯'], ['加碼', 'Formosa Meetup 華沙場']],
     body: [
       { type: 'trio', kicker: '今年主題：3R 架構', items: ['韌性供應鏈', '可信賴的夥伴關係', '烏克蘭重建'] },
       { type: 'prose', h: '華沙，位居更大格局的中心', p: [
@@ -48,10 +50,12 @@ export default {
         '我們來建立連結，也遇見了來自台灣與波蘭的老朋友。但我們也是來工作的：整個展期間，我們為台灣參展商與歐洲訪客提供口譯，讓想法真正跨越語言障礙。',
         '這是 Polylocal 工作方式的一個小而直接的例子：不是遠距離地提供跨文化策略，而是親自到場，讓交流真正發生。',
       ] },
+      { type: 'gallery', photos: ['taiwan-expo-3.jpg', 'taiwan-expo-1.jpg', 'taiwan-expo-2.jpg', 'taiwan-expo-4.jpg', 'taiwan-expo-5.jpg', 'taiwan-expo-6.jpg', 'taiwan-expo-7.jpg'], ratio: '4/5', alt: '2026 歐洲台灣形象展，華沙 EXPO XXI 展覽中心', caption: '2026 歐洲台灣形象展，華沙 EXPO XXI 展覽中心：主舞台、開幕典禮，以及智慧能源、無人載具與安全、城市發展等主題館。' },
       { type: 'feature', kicker: '隔天 · 與 Formosa Network 合辦', title: 'Formosa Meetup 華沙場', p: [
         '作為 Formosa Network 的合作夥伴，我們共同舉辦了一場小酌聚會，邀請華沙的台灣社群，以及與台灣有連結的波蘭朋友：曾經的留學生、曾在台灣工作的專業人士，以及單純愛上這座島嶼的人。',
         '對話在中文、波蘭文與英文之間切換。夜市、登山、行政手續的冒險，還有在中歐城市找到珍珠奶茶的那份奇妙喜悅。',
       ] },
+      { type: 'gallery', grid: true, photos: ['formosa-meetup-1.jpg', 'formosa-meetup-2.jpg'], alt: 'Formosa Meetup 華沙場', caption: 'Formosa Meetup 華沙場，與 Formosa Network 共同舉辦。' },
       { type: 'quote', text: '台灣與波蘭的關係正在加深，不只在商業上，也在讓這段關係得以長久的人與人之間的連結上。' },
       { type: 'prose', h: '為何這很重要', p: [
         '最讓我們印象深刻的是整體的發展方向。供應鏈、科技合作與投資當然重要，但文化與教育也同樣重要，這些連結讓國際關係能長久保持韌性。這正是我們希望持續投入的領域。',

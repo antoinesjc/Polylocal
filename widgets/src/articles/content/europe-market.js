@@ -18,6 +18,7 @@ export default {
         { who: 'Polylocal', org: 'Host', title: 'Poland, Europe’s rising player', text: 'Its strategic location, its talent pool and its growing pull for foreign investment.', tone: 'clay' },
         { who: 'Matouš Kostlivý', org: 'CzechInvest Taiwan Office', title: 'Czechia’s AI and semiconductor ecosystem', text: 'Two sectors that are moving to the centre of Europe’s innovation landscape, and where Czechia is building strength.', tone: 'clay' },
       ] },
+      { type: 'gallery', photos: ['europe-market-1.jpg', 'europe-market-2.jpg', 'europe-market-3.jpg', 'europe-market-4.jpg'], alt: 'Speakers presenting to a full room of Taiwanese business guests', caption: 'Ernest Su of GR Taiwan on the EU Single Market, and the CzechInvest Taiwan Office on Czechia’s innovation ecosystem.' },
       { type: 'highlight', kicker: 'Key takeaway', title: 'Central and Eastern Europe is a region to watch.', text: 'As companies rethink global supply chains and look for more resilient, diversified operations, Poland and the Czech Republic stand out.', chips: ['Strong industrial base', 'Competitive costs', 'Skilled workforce', 'Growing innovation ecosystems'] },
       { type: 'prose', h: 'What made the evening', p: [
         'The questions. Participants came with concrete cases, shared their own experience and stayed long after the talks. It showed a real appetite for deeper ties between Taiwan and Europe, which is exactly what we work on: helping companies read cultural differences, spot opportunities and build partnerships across markets.',
@@ -40,6 +41,7 @@ export default {
         { who: 'Polylocal', org: '主辦單位', title: '波蘭：歐洲的新興要角', text: '戰略地理位置、人才庫，以及對外國投資日益增加的吸引力。', tone: 'clay' },
         { who: 'Matouš Kostlivý', org: '捷克投資局台灣辦公室', title: '捷克的 AI 與半導體生態系', text: '這兩個產業正走向歐洲創新版圖的中心，而捷克正在其中累積實力。', tone: 'clay' },
       ] },
+      { type: 'gallery', photos: ['europe-market-1.jpg', 'europe-market-2.jpg', 'europe-market-3.jpg', 'europe-market-4.jpg'], alt: '講者向滿場的台灣企業來賓進行分享', caption: 'GR Taiwan 的 Ernest Su 解讀歐盟單一市場，以及捷克投資局台灣辦公室介紹捷克的創新生態系。' },
       { type: 'highlight', kicker: '重點收穫', title: '中東歐是值得關注的區域。', text: '隨著企業重新思考全球供應鏈，尋求更具韌性、更多元的布局，波蘭與捷克格外突出。', chips: ['穩固的產業基礎', '具競爭力的成本', '技術純熟的勞動力', '持續成長的創新生態系'] },
       { type: 'prose', h: '這個晚上的亮點', p: [
         '是現場的提問。與會者帶著具體案例前來、分享自身經驗，並在演講結束後久久不散。這顯示了台灣與歐洲加深連結的真實需求，而這正是我們的工作：協助企業理解文化差異、發掘機會，並建立跨市場的合作夥伴關係。',

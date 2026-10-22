@@ -13,12 +13,12 @@ export default {
     dek: 'How we built a digital education brand for Chinese learners, from identity and content to e-commerce and a paid community.',
     meta: 'July 2026 · 5 min read',
     clientText: 'Chinese learning brand and community, rooted in Taiwan.',
-    facts: [['Sector', 'EdTech, digital products'], ['Market', 'Chinese learners worldwide'], ['Timeline', '12 months'], ['Services', 'Brand, social, email, e-commerce, community']],
+    facts: [['Sector', 'EdTech, digital products'], ['Market', 'Chinese learners worldwide'], ['Timeline', '12 months'], ['Services', 'Brand, social, email, e-commerce, community, app']],
     results: [
       ['6×', 'Instagram growth, from 10,000 to over 60,000 followers'],
       ['80k+', 'Chinese learners across Instagram, Discord and Substack'],
       ['4', 'digital product lines selling through its own store'],
-      ['1', 'paid membership, the Mandarin Zest Club, bringing recurring revenue', true],
+      ['1', 'paid membership, the Mandarin Zest Club, with weekly live sessions and its own app', true],
     ],
     body: [
       { type: 'prose', id: 'challenge', toc: 'The challenge', h: 'The challenge', p: [
@@ -31,7 +31,19 @@ export default {
         ['Digital products', 'A TOCFL Novice Level 1 textbook in Traditional Chinese, HSK grammar guides for levels 1 to 6, a 30-day Mandarin challenge and a Xiaohongshu survival guide.'],
         ['E-commerce', 'A working digital store, from checkout to delivery, so every product could be sold the day it was ready.'],
         ['Free tools and search', 'Interactive tools on the website (a stroke order trainer, a Chinese zodiac, a Chinese name generator and a word of the day) that bring in search traffic and grow the email list. Plus an SEO clean-up, including a spam backlink audit.'],
-        ['Email, customer care and community', 'An email programme that turns followers into engaged learners, day-to-day customer support, and the Mandarin Zest Club, a paid membership with structure, materials and a peer community.'],
+        ['Email and customer care', 'An email programme that turns followers into engaged learners, and day-to-day customer support.'],
+      ] },
+      { type: 'prose', id: 'club', toc: 'The Club and its app', h: 'The Mandarin Zest Club and its app', p: [
+        'An audience follows; a community comes back. To turn learners who had already studied Chinese into learners who actually speak it, we built the Mandarin Zest Club: a paid membership centred on live 45-minute speaking sessions, several times a week, for every level and timed for Europe and the Americas.',
+        'Sessions are led by native teachers from Taiwan and China and by advanced learners who have been through the same journey. Members join on Google Meet, as many sessions as they like, and receive notes afterwards so practice carries on between calls.',
+        'The Club runs on its own Mandarin Zest Club App, where members see every upcoming session, get notifications and connect with each other, alongside a members-only Discord channel.',
+      ] },
+      { type: 'list', items: [
+        'Live speaking sessions every week, from US$20 a month, or US$6 for a single session',
+        'The Mandarin Zest Club App: session calendar, notifications and a way to reach other members',
+        'A private Discord community and notes after every session',
+        'A welcome pack with the session calendar and the month’s workbook',
+        '50% off all materials, plus member prices on bootcamps and trips to Taiwan and China',
       ] },
       { type: 'quote', text: 'Growth like this doesn’t come from posting more often. It comes from treating a content brand like a business from day one.' },
       { type: 'prose', id: 'why', toc: 'Why it worked', h: 'Why it worked', p: [
@@ -51,12 +63,12 @@ export default {
     dek: '我們如何為華語學習者打造一個數位教育品牌，從品牌識別、內容，到電子商務與付費社群。',
     meta: '2026 年 7 月 · 閱讀約 5 分鐘',
     clientText: '以台灣為根基的華語學習品牌與社群。',
-    facts: [['產業', 'EdTech、數位產品'], ['市場', '全球華語學習者'], ['期間', '12 個月'], ['服務', '品牌、社群媒體、電子郵件、電商、社群']],
+    facts: [['產業', 'EdTech、數位產品'], ['市場', '全球華語學習者'], ['期間', '12 個月'], ['服務', '品牌、社群媒體、電子郵件、電商、社群、App']],
     results: [
       ['6×', 'Instagram 追蹤者從 10,000 成長至 60,000 以上'],
       ['80k+', '遍及 Instagram、Discord 與 Substack 的華語學習者'],
       ['4', '條數位產品線，透過自有商店銷售'],
-      ['1', '個付費會員社群 Mandarin Zest Club，帶來穩定的經常性收入', true],
+      ['1', '個付費會員社群 Mandarin Zest Club，每週直播課程並有專屬 App', true],
     ],
     body: [
       { type: 'prose', id: 'challenge', toc: '挑戰', h: '挑戰', p: [
@@ -69,7 +81,19 @@ export default {
         ['數位產品', '繁體中文 TOCFL 準備級一級課本、HSK 一至六級文法指南、30 天華語挑戰，以及小紅書生存指南。'],
         ['電子商務', '建立完整運作的數位商店，從結帳到交付，讓每項產品一完成就能上架銷售。'],
         ['免費工具與搜尋', '在網站上推出互動工具（筆順練習、生肖查詢、中文名字產生器與每日一詞），帶來搜尋流量並擴大電子郵件名單。另外進行 SEO 整理，包括垃圾反向連結稽核。'],
-        ['電子郵件、客戶服務與社群', '以電子郵件將追蹤者轉化為投入的學習者，處理日常客戶支援，並推出 Mandarin Zest Club：提供學習架構、教材與同儕社群的付費會員制。'],
+        ['電子郵件與客戶服務', '以電子郵件將追蹤者轉化為投入的學習者，並處理日常客戶支援。'],
+      ] },
+      { type: 'prose', id: 'club', toc: 'Club 與 App', h: 'Mandarin Zest Club 與專屬 App', p: [
+        '受眾會追蹤，社群會回來。為了讓已經學過中文的學習者真正開口說，我們打造了 Mandarin Zest Club：以每週多場、每場 45 分鐘的線上口說課程為核心的付費會員制，涵蓋各個程度，時段配合歐洲與美洲。',
+        '課程由來自台灣與中國的母語老師，以及走過同樣學習歷程的進階學習者帶領。會員透過 Google Meet 參加，場次不限，課後還會收到筆記，讓練習在課與課之間持續。',
+        'Club 有專屬的 Mandarin Zest Club App，會員可以查看所有即將舉行的課程、接收通知並與其他會員交流，另外還有會員專屬的 Discord 頻道。',
+      ] },
+      { type: 'list', items: [
+        '每週多場直播口說課，每月 20 美元起，單堂體驗 6 美元',
+        'Mandarin Zest Club App：課程行事曆、通知與會員交流',
+        '私人 Discord 社群，每堂課後提供筆記',
+        '入會禮包：課程行事曆與當月練習本',
+        '所有教材五折，訓練營與台灣、中國遊學行程享會員價',
       ] },
       { type: 'quote', text: '這樣的成長不是靠更頻繁地發文，而是從第一天就把內容品牌當成一門事業來經營。' },
       { type: 'prose', id: 'why', toc: '為何成功', h: '為何成功', p: [

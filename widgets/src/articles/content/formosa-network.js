@@ -31,6 +31,7 @@ export default {
         ['Email', 'Keeping a community spread across time zones informed between posts and events.'],
         ['Meetups', 'Online meetups on a private Discord, and in-person gatherings in Brussels, Warsaw and London, including a Formosa Meetup the day after Taiwan Expo 2026.'],
       ] },
+      { type: 'gallery', photos: ['formosa-brussels-1.jpg', 'formosa-brussels-2.jpg', 'formosa-brussels-3.jpg', 'formosa-brussels-4.jpg'], ratio: '3/4', alt: 'Formosa Meetup Brussels', caption: 'Formosa Meetup Brussels: bubble tea and conversation with the community.' },
       { type: 'quote', text: 'Community building runs on trust, not ad spend. And trust comes from consistency.' },
       { type: 'prose', id: 'why', toc: 'Why it worked', h: 'Why it worked', p: [
         'A clear identity, content people actually want to read, and a community that stays curated rather than trying to be everything to everyone. Growth came from treating members’ shared experience of Taiwan as the foundation, not from chasing reach for its own sake.',
@@ -63,6 +64,7 @@ export default {
         ['電子郵件', '讓分散在不同時區的社群，在文章與活動之間持續掌握最新消息。'],
         ['聚會', '在私人 Discord 舉辦線上聚會，並在布魯塞爾、華沙與倫敦舉辦實體聚會，包括 2026 歐洲台灣形象展隔天的 Formosa Meetup。'],
       ] },
+      { type: 'gallery', photos: ['formosa-brussels-1.jpg', 'formosa-brussels-2.jpg', 'formosa-brussels-3.jpg', 'formosa-brussels-4.jpg'], ratio: '3/4', alt: 'Formosa Meetup 布魯塞爾場', caption: 'Formosa Meetup 布魯塞爾場：與社群成員一起喝珍奶、聊天。' },
       { type: 'quote', text: '社群經營靠的是信任，而不是廣告預算。而信任來自一致性。' },
       { type: 'prose', id: 'why', toc: '為何成功', h: '為何成功', p: [
         '清楚的識別、人們真正想讀的內容，以及一個保持精選、而不試圖討好所有人的社群。成長來自以成員共同的台灣經驗為根基，而不是為了觸及而追求觸及。',
