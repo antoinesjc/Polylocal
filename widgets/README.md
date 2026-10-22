@@ -21,10 +21,10 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 
 ```html
 <polylocal-home></polylocal-home>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@COMMIT/widgets/dist/polylocal-home.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@6495009dd11b60d60a9a95ec7440098b2d136d5a/widgets/dist/polylocal-home.js" defer></script>
 ```
 
-(`COMMIT` is the version code given in the pull request or by whoever last updated the widgets.)
+(The code after `@` pins this exact version of the widget.)
 
 6. Save, then open the published page. Odoo does not run embedded scripts in edit mode, so the block looks empty while editing.
 7. Switch the site to 繁體中文 to check the Chinese version. No second embed is needed.
@@ -41,7 +41,7 @@ These must exist on the Odoo site (they do today): `/digital-marketing`, `/b2b-l
 
 ```html
 <polylocal-map></polylocal-map>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@COMMIT/widgets/dist/polylocal-map.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@6495009dd11b60d60a9a95ec7440098b2d136d5a/widgets/dist/polylocal-map.js" defer></script>
 ```
 
 | Map attribute | Values | Default |
