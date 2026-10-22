@@ -13,6 +13,12 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 
 ![Brussels selected with the Europe zoom (English), and Taipei selected (Traditional Chinese)](demo/preview.png)
 
+## Hosting
+
+The widgets are served by GitHub Pages straight from this repo (`main` branch, root folder), at `https://antoinesjc.github.io/Polylocal/widgets/dist/`. Every push to `main` updates the live site within a few minutes. To enable it once: repo **Settings > Pages > Deploy from a branch > main / (root)**. The empty `.nojekyll` file at the root tells Pages to serve the files as they are.
+
+To freeze a page on a specific version instead, load it from jsDelivr with a commit code: `https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@<commit>/widgets/dist/<file>.js`.
+
 ## Add the homepage in Odoo
 
 1. Open the homepage in the website editor and click **Edit**.
@@ -23,10 +29,10 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 
 ```html
 <polylocal-home></polylocal-home>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@8393b4608c01a4c1f762acb1742efd64476eb0c0/widgets/dist/polylocal-home.js" defer></script>
+<script src="https://antoinesjc.github.io/Polylocal/widgets/dist/polylocal-home.js" defer></script>
 ```
 
-(The code after `@` pins this exact version of the widget.)
+(This address always serves the latest version on `main`, so the embed never needs updating.)
 
 6. Save, then open the published page. Odoo does not run embedded scripts in edit mode, so the block looks empty while editing.
 7. Switch the site to 繁體中文 to check the Chinese version. No second embed is needed.
@@ -45,7 +51,7 @@ Same steps as the homepage, on the `/digital-marketing` page, with:
 
 ```html
 <polylocal-digital-marketing></polylocal-digital-marketing>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@8393b4608c01a4c1f762acb1742efd64476eb0c0/widgets/dist/polylocal-digital-marketing.js" defer></script>
+<script src="https://antoinesjc.github.io/Polylocal/widgets/dist/polylocal-digital-marketing.js" defer></script>
 ```
 
 Its buttons go to `/contactus` and `/b2b-lead-generation` (with `/zh_TW` on the Chinese site).
@@ -56,7 +62,7 @@ Same steps as the homepage, on the `/b2b-lead-generation` page, with:
 
 ```html
 <polylocal-lead-generation></polylocal-lead-generation>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@8393b4608c01a4c1f762acb1742efd64476eb0c0/widgets/dist/polylocal-lead-generation.js" defer></script>
+<script src="https://antoinesjc.github.io/Polylocal/widgets/dist/polylocal-lead-generation.js" defer></script>
 ```
 
 Its buttons go to `/contactus` and `/digital-marketing` (with `/zh_TW` on the Chinese site).
@@ -65,7 +71,7 @@ Its buttons go to `/contactus` and `/digital-marketing` (with `/zh_TW` on the Ch
 
 ```html
 <polylocal-map></polylocal-map>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@8393b4608c01a4c1f762acb1742efd64476eb0c0/widgets/dist/polylocal-map.js" defer></script>
+<script src="https://antoinesjc.github.io/Polylocal/widgets/dist/polylocal-map.js" defer></script>
 ```
 
 | Map attribute | Values | Default |
@@ -109,7 +115,7 @@ npm install      # first time only
 npm run build    # writes dist/
 ```
 
-Commit and push the updated `dist/` files, then change the version code after `@` in the Odoo embed to the new commit. Pinning an exact version means the site always loads exactly that build and the CDN never serves something stale. (A GitHub release tag such as `v1.1.0` works in place of the commit code too.)
+Commit and push the updated `dist/` files to `main`. The site loads the widgets from GitHub Pages, so it picks up the new version within a few minutes. Nothing needs to change in Odoo.
 
 ## Adding a new widget
 
