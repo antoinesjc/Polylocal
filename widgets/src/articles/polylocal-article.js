@@ -60,6 +60,10 @@ class PolylocalArticle extends PolylocalPage {
     </div>
   </section>` : '';
 
+    // Full-width blocks (the app showcase) split a case study's text column in two.
+    const caseParts = [[]];
+    t.body.forEach((b) => { if (b.type === 'app') caseParts.push([b]); else caseParts[caseParts.length - 1].push(b); });
+
     const body = isCase ? `
   <section class="a-wide case-body tone-${a.tone}">
     <aside class="side">
@@ -67,8 +71,10 @@ class PolylocalArticle extends PolylocalPage {
       <ol class="toc">${t.body.filter((b) => b.toc).map((b) => `<li><a href="#${esc(b.id)}">${esc(b.toc)}</a></li>`).join('')}</ol>
       <div class="client"><span class="side-label">${esc(lab.client)}</span>${logo ? `<img class="client-logo" src="${logo}" alt="${esc(a.client.name)}">` : `<strong style="color:${esc(a.client.color)}">${esc(a.client.name)}</strong>`}<span>${esc(t.clientText)}</span></div>
     </aside>
-    <div class="col">${t.body.map(block).join('')}</div>
-  </section>` : `
+    <div class="col">${caseParts[0].map(block).join('')}</div>
+  </section>${caseParts.slice(1).map((part) => `
+  <section class="a-wide app-band tone-${a.tone}">${block(part[0])}</section>${part.length > 1 ? `
+  <section class="a-wide case-body case-more tone-${a.tone}"><div class="side side-spacer" aria-hidden="true"></div><div class="col">${part.slice(1).map(block).join('')}</div></section>` : ''}`).join('')}` : `
   <div class="event-body tone-${a.tone}">
     ${t.body.map((b) => `<div class="${wideTypes.has(b.type) ? 'a-wide' : 'a-narrow'} ev-block">${block(b)}</div>`).join('')}
   </div>`;
@@ -129,8 +135,9 @@ class PolylocalArticle extends PolylocalPage {
       }
       case 'app': {
         // An app showcase: phone-framed screenshots from assets/photos/.
-        const shots = b.screens.map(([f, label]) => `<figure class="phone"><div class="phone-frame"><img src="${esc(assetUrl(`photos/${f}`, this))}" alt="${esc(label)}" loading="lazy"></div><figcaption>${esc(label)}</figcaption></figure>`).join('');
-        return `<div class="app-show"${id}><div><span class="feature-kicker">${esc(b.kicker)}</span><h2>${esc(b.title)}</h2><p>${esc(b.text)}</p></div><div class="phones" style="--n:${Math.min(b.screens.length, 3)}">${shots}</div></div>`;
+        // screens: [file, title, caption]. In case studies it runs full width under the text.
+        const shots = b.screens.map(([f, title, cap]) => `<figure class="phone"><div class="phone-frame"><img src="${esc(assetUrl(`photos/${f}`, this))}" alt="${esc(`${b.alt}: ${title}`)}" loading="lazy"></div><figcaption><strong>${esc(title)}</strong>${esc(cap)}</figcaption></figure>`).join('');
+        return `<div class="app-show"${id}><div class="app-head"><div><span class="feature-kicker">${esc(b.kicker)}</span><h2>${esc(b.title)}</h2></div><p>${esc(b.text)}</p></div><div class="phones" style="--n:${Math.min(b.screens.length, 4)}">${shots}</div></div>`;
       }
       default: return '';
     }

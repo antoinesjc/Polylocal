@@ -36,14 +36,20 @@ export default {
       { type: 'prose', id: 'club', toc: 'The Club and its app', h: 'The Mandarin Zest Club and its app', p: [
         'An audience follows; a community comes back. To turn learners who had already studied Chinese into learners who actually speak it, we built the Mandarin Zest Club: a paid membership centred on live 45-minute speaking sessions, several times a week, for every level and timed for Europe and the Americas.',
         'Sessions are led by native teachers from Taiwan and China and by advanced learners who have been through the same journey. Members join on Google Meet, as many sessions as they like, and receive notes afterwards so practice carries on between calls.',
-        'The Club runs on its own Mandarin Zest Club App, where members see every upcoming session, get notifications and connect with each other, alongside a members-only Discord channel.',
+        'We also designed the Club its own app, the Mandarin Zest Club App, installed straight from the browser on a phone or a computer. Members see every upcoming session and sign up in one tap, read the notes from each session, and earn XP for showing up, which unlocks new fruit avatars and puts them on a monthly leaderboard. A members-only Discord channel sits alongside it.',
       ] },
       { type: 'list', items: [
         'Live speaking sessions every week, from US$20 a month, or US$6 for a single session',
-        'The Mandarin Zest Club App: session calendar, notifications and a way to reach other members',
+        'The Mandarin Zest Club App: session calendar, one-tap sign-up, session notes, XP and a monthly leaderboard',
         'A private Discord community and notes after every session',
         'A welcome pack with the session calendar and the month’s workbook',
         '50% off all materials, plus member prices on bootcamps and trips to Taiwan and China',
+      ] },
+      { type: 'app', id: 'app', toc: 'The Club app', kicker: 'The Mandarin Zest Club App', title: 'An app of its own, designed by us', alt: 'Mandarin Zest Club App', text: 'Installed from the browser on any phone or computer, it is where members find sessions, sign up, review their notes and track their progress.', screens: [
+        ['mz-app-home.jpg', 'Home', 'The next session, XP progress and one-tap sign-up for what is coming up.'],
+        ['mz-app-notes.jpg', 'Session notes', 'Vocabulary, useful sentences and common corrections after every session.'],
+        ['mz-app-leaderboard.jpg', 'Leaderboard', 'A monthly XP ranking that keeps members coming back.'],
+        ['mz-app-profile.jpg', 'Fruit avatars', 'New fruits unlock as members level up, each with its Chinese name.'],
       ] },
       { type: 'quote', text: 'Growth like this doesn’t come from posting more often. It comes from treating a content brand like a business from day one.' },
       { type: 'prose', id: 'why', toc: 'Why it worked', h: 'Why it worked', p: [
@@ -86,14 +92,20 @@ export default {
       { type: 'prose', id: 'club', toc: 'Club 與 App', h: 'Mandarin Zest Club 與專屬 App', p: [
         '受眾會追蹤，社群會回來。為了讓已經學過中文的學習者真正開口說，我們打造了 Mandarin Zest Club：以每週多場、每場 45 分鐘的線上口說課程為核心的付費會員制，涵蓋各個程度，時段配合歐洲與美洲。',
         '課程由來自台灣與中國的母語老師，以及走過同樣學習歷程的進階學習者帶領。會員透過 Google Meet 參加，場次不限，課後還會收到筆記，讓練習在課與課之間持續。',
-        'Club 有專屬的 Mandarin Zest Club App，會員可以查看所有即將舉行的課程、接收通知並與其他會員交流，另外還有會員專屬的 Discord 頻道。',
+        '我們也為 Club 設計了專屬的 Mandarin Zest Club App，可直接從瀏覽器安裝在手機或電腦上。會員可以查看所有即將舉行的課程並一鍵報名、閱讀每堂課的筆記，出席還能累積 XP，解鎖新的水果頭像並登上每月排行榜。另外還有會員專屬的 Discord 頻道。',
       ] },
       { type: 'list', items: [
         '每週多場直播口說課，每月 20 美元起，單堂體驗 6 美元',
-        'Mandarin Zest Club App：課程行事曆、通知與會員交流',
+        'Mandarin Zest Club App：課程行事曆、一鍵報名、課堂筆記、XP 與每月排行榜',
         '私人 Discord 社群，每堂課後提供筆記',
         '入會禮包：課程行事曆與當月練習本',
         '所有教材五折，訓練營與台灣、中國遊學行程享會員價',
+      ] },
+      { type: 'app', id: 'app', toc: 'Club App', kicker: 'Mandarin Zest Club App', title: '由我們設計的專屬 App', alt: 'Mandarin Zest Club App', text: '可直接從瀏覽器安裝在任何手機或電腦上，會員在這裡找課程、報名、複習筆記並追蹤自己的進度。', screens: [
+        ['mz-app-home.jpg', '首頁', '下一堂課、XP 進度，以及即將舉行課程的一鍵報名。'],
+        ['mz-app-notes.jpg', '課堂筆記', '每堂課後的詞彙、實用句子與常見錯誤修正。'],
+        ['mz-app-leaderboard.jpg', '排行榜', '每月 XP 排名，讓會員持續回來上課。'],
+        ['mz-app-profile.jpg', '水果頭像', '隨著等級提升解鎖新的水果，每個都附上中文名稱。'],
       ] },
       { type: 'quote', text: '這樣的成長不是靠更頻繁地發文，而是從第一天就把內容品牌當成一門事業來經營。' },
       { type: 'prose', id: 'why', toc: '為何成功', h: '為何成功', p: [
