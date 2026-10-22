@@ -99,11 +99,11 @@ svg.map{position:absolute;inset:0;width:100%;height:100%;display:block}
 
 .chip{position:absolute;display:flex;align-items:center;gap:10px;background:rgba(23,34,42,.88);border:1px solid rgba(255,255,255,.16);
   padding:9px 13px;border-radius:2px;font-size:13px;font-weight:800;color:#FFFFFF}
-.region{left:16px;top:16px}
+.region{left:16px;bottom:14px}
 .swatch{width:10px;height:10px;display:inline-block}
 .swatch.clay{background:var(--pl-clay-hi);border:1px solid var(--pl-clay-xl)}
 .swatch.sky{background:color-mix(in srgb,var(--pl-sky) 80%,transparent);border:1px solid var(--pl-sky-xl)}
-.hint{left:16px;bottom:14px;font-size:12px;font-weight:600;padding:8px 12px;background:rgba(23,34,42,.78);border:0;color:rgba(255,255,255,.82)}
+.hint{right:16px;top:14px;font-size:12px;font-weight:600;padding:8px 12px;background:rgba(23,34,42,.78);border:0;color:rgba(255,255,255,.82)}
 .distance{right:18px;top:50%;transform:translateY(-50%);font-weight:700;opacity:0;transition:opacity .4s;pointer-events:none}
 .distance.on{opacity:1}
 .distance svg{width:18px;height:18px;fill:none;stroke:var(--pl-clay-lt);stroke-width:2;stroke-linecap:round}
@@ -129,7 +129,7 @@ svg.map{position:absolute;inset:0;width:100%;height:100%;display:block}
 @media (max-width:640px){
   .pin .label{font-size:11px;padding:4px 7px}
   .pin.brussels .label{right:auto;left:50%;top:auto;bottom:calc(50% + 10px);transform:translateX(-50%)}
-  .region{top:auto;bottom:8px;left:8px;font-size:11px;padding:6px 9px;gap:7px}
+  .region{bottom:8px;left:8px;font-size:11px;padding:6px 9px;gap:7px}
   .hint{display:none}
   .card{padding:24px}
   .card h3{font-size:26px}

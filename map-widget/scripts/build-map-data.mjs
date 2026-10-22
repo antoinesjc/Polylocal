@@ -15,13 +15,16 @@ const countries = topo.feature(world, world.objects.countries).features;
 
 // ---- projection -----------------------------------------------------------
 const W = 1200;
-const frame = { type: 'MultiPoint', coordinates: [[-11, 36], [-11, 64], [40, 66], [135, 54], [135, 20], [104, -1.5], [-9, 35]] };
-const proj = geoNaturalEarth1().rotate([-62, 0]).fitWidth(W - 40, frame);
+// Frame: Iberia to Japan's longitude, North Cape (71°N) down to Singapore.
+const frame = { type: 'MultiPoint', coordinates: [[-10, 36], [-10, 71], [26, 71.5], [40, 68], [135, 54], [135, 20], [104, -1.5], [-9, 35]] };
+const PAD_X = 36;
+const PAD_Y = 30;
+const proj = geoNaturalEarth1().rotate([-62, 0]).fitWidth(W - 2 * PAD_X, frame);
 const path = geoPath(proj);
 let b = path.bounds(frame);
-proj.translate([proj.translate()[0] - b[0][0] + 20, proj.translate()[1] - b[0][1] + 24]);
+proj.translate([proj.translate()[0] - b[0][0] + PAD_X, proj.translate()[1] - b[0][1] + PAD_Y]);
 b = path.bounds(frame);
-const H = Math.ceil(b[1][1]) + 24;
+const H = Math.ceil(b[1][1]) + PAD_Y;
 
 // ---- regions (ISO 3166-1 numeric) -----------------------------------------
 const EU27 = ['040', '056', '100', '191', '196', '203', '208', '233', '246', '250', '276', '300', '348', '372', '380', '428', '440', '442', '470', '528', '616', '620', '642', '703', '705', '724', '752'];
@@ -75,13 +78,21 @@ const arcs = {
 };
 
 // Europe zoom: scale and transform-origin (in %) that fit Europe into the frame.
-const eb = path.bounds({ type: 'MultiPoint', coordinates: [[-11, 36], [-11, 61], [32, 61], [32, 40], [28, 36]] });
+// The whole EU, Lapland to Cyprus, centred in the frame with a small margin.
+const eb = path.bounds({ type: 'MultiPoint', coordinates: [[-11, 35], [-11, 71], [33, 71], [35, 35], [-6, 34.5]] });
 const x0 = eb[0][0] / W * 100;
 const x1 = eb[1][0] / W * 100;
 const y0 = eb[0][1] / H * 100;
 const y1 = eb[1][1] / H * 100;
-const S = +Math.min(100 / (x1 - x0), 100 / (y1 - y0)).toFixed(2);
-const zoom = { scale: S, originX: +(x0 * S / (S - 1)).toFixed(2), originY: +(y0 * S / (S - 1)).toFixed(2) };
+const S = +(0.94 * Math.min(100 / (x1 - x0), 100 / (y1 - y0))).toFixed(2);
+// Pick the origin so the box centre lands in the middle of the frame, kept inside the map.
+const origin = (c) => {
+  const o = (50 - c * S) / (1 - S);
+  const v = (o / 100) * (1 - 1 / S);               // viewBox offset as a share of the map
+  const clamped = Math.min(Math.max(v, 0), 1 - 1 / S);
+  return +((clamped * 100) / (1 - 1 / S)).toFixed(2);
+};
+const zoom = { scale: S, originX: origin((x0 + x1) / 2), originY: origin((y0 + y1) / 2) };
 
 const km = (a, c) => Math.round(geoDistance(CITIES[a], CITIES[c]) * 6371 / 100) * 100;
 const distances = { taipeiWarsaw: km('taipei', 'warsaw'), taipeiBrussels: km('taipei', 'brussels') };
