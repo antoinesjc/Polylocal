@@ -5,7 +5,7 @@ export default {
   category: 'cases',
   url: '/blog/case-studies-11/case-study-building-a-digital-education-brand-from-scratch-mandarin-zest-29',
   tone: 'sky',
-  client: { name: 'Mandarin Zest', color: '#F37A48' },
+  client: { name: 'Mandarin Zest', color: '#F37A48', logo: 'logos/mandarin-zest.png' },
   related: ['formosa-network'],
   en: {
     tags: ['Case study', 'Digital marketing'],

@@ -27,6 +27,7 @@ class PolylocalArticle extends PolylocalPage {
     const t = a[lang];
     const cat = lab.categories[a.category];
     const isCase = a.kind === 'case';
+    const logo = a.client && a.client.logo ? esc(assetUrl(a.client.logo, this)) : '';
     const sp = lang === 'zh-TW' ? '' : ' ';
 
     const block = (b) => this.block(b, h, a);
@@ -47,7 +48,10 @@ class PolylocalArticle extends PolylocalPage {
 
     const caseTop = isCase ? `
   <div class="a-wide fact-card-wrap">
-    <dl class="fact-card">${t.facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+    <div class="fact-box">
+      ${logo ? `<div class="fact-logo"><span class="side-label">${esc(lab.client)}</span><img src="${logo}" alt="${esc(a.client.name)}"></div>` : ''}
+      <dl class="fact-card">${t.facts.map(([k, v]) => `<div><dt>${esc(k)}</dt><dd>${esc(v)}</dd></div>`).join('')}</dl>
+    </div>
   </div>
   <section class="a-wide results tone-${a.tone}">
     <h2 class="eyebrow">${esc(lab.results)}</h2>
@@ -61,7 +65,7 @@ class PolylocalArticle extends PolylocalPage {
     <aside class="side">
       <p class="side-label">${esc(lab.toc)}</p>
       <ol class="toc">${t.body.filter((b) => b.toc).map((b) => `<li><a href="#${esc(b.id)}">${esc(b.toc)}</a></li>`).join('')}</ol>
-      <div class="client"><span class="side-label">${esc(lab.client)}</span><strong style="color:${esc(a.client.color)}">${esc(a.client.name)}</strong><span>${esc(t.clientText)}</span></div>
+      <div class="client"><span class="side-label">${esc(lab.client)}</span>${logo ? `<img class="client-logo" src="${logo}" alt="${esc(a.client.name)}">` : `<strong style="color:${esc(a.client.color)}">${esc(a.client.name)}</strong>`}<span>${esc(t.clientText)}</span></div>
     </aside>
     <div class="col">${t.body.map(block).join('')}</div>
   </section>` : `
@@ -122,6 +126,11 @@ class PolylocalArticle extends PolylocalPage {
           ${rest.length ? `<div class="g-grid${first ? '' : ' g-only'}" style="${style}">${rest.map(img).join('')}</div>` : ''}
           ${b.caption ? `<figcaption>${esc(b.caption)}</figcaption>` : ''}
         </figure>`;
+      }
+      case 'app': {
+        // An app showcase: phone-framed screenshots from assets/photos/.
+        const shots = b.screens.map(([f, label]) => `<figure class="phone"><div class="phone-frame"><img src="${esc(assetUrl(`photos/${f}`, this))}" alt="${esc(label)}" loading="lazy"></div><figcaption>${esc(label)}</figcaption></figure>`).join('');
+        return `<div class="app-show"${id}><div><span class="feature-kicker">${esc(b.kicker)}</span><h2>${esc(b.title)}</h2><p>${esc(b.text)}</p></div><div class="phones" style="--n:${Math.min(b.screens.length, 3)}">${shots}</div></div>`;
       }
       default: return '';
     }
