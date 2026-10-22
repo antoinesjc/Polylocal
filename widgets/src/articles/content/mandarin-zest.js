@@ -1,0 +1,86 @@
+// Case study: Mandarin Zest. English and Traditional Chinese.
+export default {
+  id: 'mandarin-zest',
+  kind: 'case',
+  category: 'cases',
+  url: '/blog/case-studies-11/case-study-building-a-digital-education-brand-from-scratch-mandarin-zest-29',
+  tone: 'sky',
+  client: { name: 'Mandarin Zest', color: '#F37A48' },
+  related: ['formosa-network'],
+  en: {
+    tags: ['Case study', 'Digital marketing'],
+    title: ['Mandarin Zest: from zero to an', '80,000-learner brand', 'in one year'],
+    dek: 'How we built a digital education brand for Chinese learners, from identity and content to e-commerce and a paid community.',
+    meta: 'July 2026 · 5 min read',
+    clientText: 'Chinese learning brand and community, rooted in Taiwan.',
+    facts: [['Sector', 'EdTech, digital products'], ['Market', 'Chinese learners worldwide'], ['Timeline', '12 months'], ['Services', 'Brand, social, email, e-commerce, community']],
+    results: [
+      ['6×', 'Instagram growth, from 10,000 to over 60,000 followers'],
+      ['80k+', 'Chinese learners across Instagram, Discord and Substack'],
+      ['4', 'digital product lines selling through its own store'],
+      ['1', 'paid membership, the Mandarin Zest Club, bringing recurring revenue', true],
+    ],
+    body: [
+      { type: 'prose', id: 'challenge', toc: 'The challenge', h: 'The challenge', p: [
+        'Chinese learners are surrounded by content, but very little of it is structured, and even less is written by people who have actually gone through the long road to fluency. Mandarin Zest set out to fill that gap.',
+        'The idea was strong. Everything around it was missing: no brand, no audience, no store and no business model. The challenge was to build identity, community and commerce at the same time, so that attention could turn into a sustainable business rather than a busy feed.',
+      ] },
+      { type: 'steps', id: 'approach', toc: 'What we did', h: 'What we did', intro: 'We acted as the brand’s growth and operations team, covering everything a digital consumer brand needs to scale.', items: [
+        ['Brand and positioning', 'A visual identity, a tone of voice and a clear position: a Taiwan-grounded, no-nonsense alternative to gimmicky language apps.'],
+        ['Content and social media', 'Instagram as the main growth channel, with a Discord server for learners and a Substack newsletter for longer reads.'],
+        ['Digital products', 'A TOCFL Novice Level 1 textbook in Traditional Chinese, HSK grammar guides for levels 1 to 6, a 30-day Mandarin challenge and a Xiaohongshu survival guide.'],
+        ['E-commerce', 'A working digital store, from checkout to delivery, so every product could be sold the day it was ready.'],
+        ['Free tools and search', 'Interactive tools on the website (a stroke order trainer, a Chinese zodiac, a Chinese name generator and a word of the day) that bring in search traffic and grow the email list. Plus an SEO clean-up, including a spam backlink audit.'],
+        ['Email, customer care and community', 'An email programme that turns followers into engaged learners, day-to-day customer support, and the Mandarin Zest Club, a paid membership with structure, materials and a peer community.'],
+      ] },
+      { type: 'quote', text: 'Growth like this doesn’t come from posting more often. It comes from treating a content brand like a business from day one.' },
+      { type: 'prose', id: 'why', toc: 'Why it worked', h: 'Why it worked', p: [
+        'Three things were in place early: a consistent identity, a real product behind the audience, and the infrastructure (email, store, community) to capture attention before it disappeared into the feed. Audience-building and business-building happened together, not one after the other.',
+      ] },
+      { type: 'box', id: 'you', toc: 'What it means for you', h: 'What it means for your market entry', items: [
+        'Visibility only pays off when there is a structure behind it to convert attention.',
+        'Own your audience: email and community outlast any algorithm.',
+        'Give people a reason to come back, not just a reason to follow.',
+      ] },
+    ],
+    cta: { title: 'Building an audience in a new market?', text: 'We help brands become visible and credible across Europe and Asia.', secondary: ['Digital marketing', '/digital-marketing'] },
+  },
+  'zh-TW': {
+    tags: ['案例研究', '數位行銷'],
+    title: ['Mandarin Zest：一年內從零打造', '八萬名學習者的品牌', ''],
+    dek: '我們如何為華語學習者打造一個數位教育品牌，從品牌識別、內容，到電子商務與付費社群。',
+    meta: '2026 年 7 月 · 閱讀約 5 分鐘',
+    clientText: '以台灣為根基的華語學習品牌與社群。',
+    facts: [['產業', 'EdTech、數位產品'], ['市場', '全球華語學習者'], ['期間', '12 個月'], ['服務', '品牌、社群媒體、電子郵件、電商、社群']],
+    results: [
+      ['6×', 'Instagram 追蹤者從 10,000 成長至 60,000 以上'],
+      ['80k+', '遍及 Instagram、Discord 與 Substack 的華語學習者'],
+      ['4', '條數位產品線，透過自有商店銷售'],
+      ['1', '個付費會員社群 Mandarin Zest Club，帶來穩定的經常性收入', true],
+    ],
+    body: [
+      { type: 'prose', id: 'challenge', toc: '挑戰', h: '挑戰', p: [
+        '華語學習者身邊不缺內容，但有系統的很少，由真正走過「從零到流利」這條路的人所寫的更少。Mandarin Zest 就是要填補這個缺口。',
+        '想法很好，但周邊的一切都還沒有：沒有品牌、沒有受眾、沒有商店，也沒有商業模式。挑戰在於同時建立品牌、社群與商業，讓關注轉化為可持續的事業，而不只是熱鬧的動態牆。',
+      ] },
+      { type: 'steps', id: 'approach', toc: '我們做了什麼', h: '我們做了什麼', intro: '我們擔任品牌的成長與營運團隊，涵蓋數位消費品牌擴張所需的一切。', items: [
+        ['品牌與定位', '建立視覺識別與語氣，並明確定位：以台灣為根基、務實不花俏的學習選擇，有別於噱頭十足的語言 App。'],
+        ['內容與社群媒體', '以 Instagram 為主要成長管道，並搭配學習者的 Discord 社群，以及用於深度內容的 Substack 電子報。'],
+        ['數位產品', '繁體中文 TOCFL 準備級一級課本、HSK 一至六級文法指南、30 天華語挑戰，以及小紅書生存指南。'],
+        ['電子商務', '建立完整運作的數位商店，從結帳到交付，讓每項產品一完成就能上架銷售。'],
+        ['免費工具與搜尋', '在網站上推出互動工具（筆順練習、生肖查詢、中文名字產生器與每日一詞），帶來搜尋流量並擴大電子郵件名單。另外進行 SEO 整理，包括垃圾反向連結稽核。'],
+        ['電子郵件、客戶服務與社群', '以電子郵件將追蹤者轉化為投入的學習者，處理日常客戶支援，並推出 Mandarin Zest Club：提供學習架構、教材與同儕社群的付費會員制。'],
+      ] },
+      { type: 'quote', text: '這樣的成長不是靠更頻繁地發文，而是從第一天就把內容品牌當成一門事業來經營。' },
+      { type: 'prose', id: 'why', toc: '為何成功', h: '為何成功', p: [
+        '三件事很早就到位：一致的品牌識別、受眾背後真正的產品，以及在注意力消失於動態之前就能留住它的基礎建設（電子郵件、商店、社群）。建立受眾與建立事業是同時進行，而不是先後進行。',
+      ] },
+      { type: 'box', id: 'you', toc: '對你的啟示', h: '對你的市場拓展有什麼啟示', items: [
+        '只有在背後有能轉化關注的架構時，能見度才會帶來回報。',
+        '經營自己的受眾：電子郵件與社群比任何演算法都長久。',
+        '給人們回來的理由，而不只是追蹤的理由。',
+      ] },
+    ],
+    cta: { title: '想在新市場建立受眾嗎？', text: '我們協助品牌在歐洲與亞洲建立能見度與信任。', secondary: ['數位行銷', '/digital-marketing'] },
+  },
+};

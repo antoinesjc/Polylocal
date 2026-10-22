@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polylocal article widget demo</title>
+<style>
+  body { margin: 0; font-family: system-ui, sans-serif; }
+  .fake-odoo-header { background: #17222A; color: #fff; padding: 18px 24px; display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-weight: 600; }
+  .fake-odoo-header button, .fake-odoo-header select { font: inherit; padding: 6px 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,.5); background: transparent; color: #fff; cursor: pointer; }
+  .fake-odoo-header option { color: #000; }
+  #o_wblog_post_top { background: #555; color: #fff; padding: 80px 24px; text-align: center; font-size: 28px; }
+  .o_container_small { max-width: 720px; margin: 0 auto; padding: 0 12px; }
+</style>
+</head>
+<body>
+<div class="fake-odoo-header">
+  Odoo header (demo) ·
+  <button type="button" onclick="document.documentElement.lang='en'">English</button>
+  <button type="button" onclick="document.documentElement.lang='zh-TW'">繁體中文</button>
+  <select onchange="document.querySelector('polylocal-article').setAttribute('article', this.value)" aria-label="Article">
+    <option value="mandarin-zest">Mandarin Zest</option>
+    <option value="formosa-network">Formosa Network</option>
+    <option value="first-event">First public event</option>
+    <option value="europe-market">Europe's changing market</option>
+    <option value="taiwan-expo-2026">Taiwan Expo 2026</option>
+  </select>
+</div>
+<!-- Odoo's own blog post cover: the widget hides it -->
+<div id="o_wblog_post_top">Odoo blog post cover (hidden by the widget)</div>
+<div id="o_wblog_post_content" class="o_container_small">
+  <!-- This is exactly what goes in the blog post's Embed Code block -->
+  <polylocal-article article="mandarin-zest"></polylocal-article>
+</div>
+<script src="../dist/polylocal-article.js"></script>
+</body>
+</html>

@@ -10,6 +10,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 | `<polylocal-digital-marketing>` | `dist/polylocal-digital-marketing.js` | The Digital Marketing service page |
 | `<polylocal-lead-generation>` | `dist/polylocal-lead-generation.js` | The B2B Lead Generation service page |
 | `<polylocal-about>` | `dist/polylocal-about.js` | The About page |
+| `<polylocal-article>` | `dist/polylocal-article.js` | Blog articles: case studies and event recaps |
 | `<polylocal-map>` | `dist/polylocal-map.js` | The interactive Europe and Asia map on its own (already included in the homepage) |
 
 ![Brussels selected with the Europe zoom (English), and Taipei selected (Traditional Chinese)](demo/preview.png)
@@ -79,6 +80,28 @@ Same steps as the homepage, on the `/about-us` page, with:
 
 It names no individual team members, by design.
 
+## Add an article to a blog post
+
+Open the blog post in the Odoo editor, delete its text, drag in one **Embed Code** block (padding 0) and paste the line for that post:
+
+| Blog post | Embed |
+| --- | --- |
+| Case study: Mandarin Zest | `<polylocal-article article="mandarin-zest"></polylocal-article>` |
+| Case study: Formosa Network | `<polylocal-article article="formosa-network"></polylocal-article>` |
+| Our first public event | `<polylocal-article article="first-event"></polylocal-article>` |
+| Europe's changing market | `<polylocal-article article="europe-market"></polylocal-article>` |
+| Taiwan Expo 2026 in Warsaw | `<polylocal-article article="taiwan-expo-2026"></polylocal-article>` |
+
+followed, in the same block, by:
+
+```html
+<script src="https://antoinesjc.github.io/Polylocal/widgets/dist/polylocal-article.js" defer></script>
+```
+
+The article brings its own header, so it hides Odoo's blog post cover on that page (add `keep-cover` to the tag to keep it). Because the text now lives in the widget, set each post's **teaser** in Odoo so the blog listing still shows a summary.
+
+Article text, in both languages, lives in [`src/articles/content/`](src/articles/content/), one file per article. To add a new article, copy one of those files, give it a new `id`, and list it in [`src/articles/index.js`](src/articles/index.js).
+
 ## Add only the map
 
 ```html
@@ -118,6 +141,7 @@ All wording lives in one file per widget, with English and Chinese side by side:
 - Digital Marketing: [`src/digital-marketing/i18n.js`](src/digital-marketing/i18n.js)
 - B2B Lead Generation: [`src/lead-generation/i18n.js`](src/lead-generation/i18n.js)
 - About: [`src/about/i18n.js`](src/about/i18n.js)
+- Articles: [`src/articles/content/`](src/articles/content/)
 - Map: [`src/map/i18n.js`](src/map/i18n.js)
 - Shared by all pages (logo strip labels, closing checklist, "Contact us"): [`src/shared/common.js`](src/shared/common.js)
 
@@ -150,6 +174,7 @@ python3 -m http.server 8000
 # digital marketing: http://localhost:8000/demo/digital-marketing.html
 # b2b lead generation: http://localhost:8000/demo/lead-generation.html
 # about: http://localhost:8000/demo/about.html
+# articles: http://localhost:8000/demo/article.html
 # map only: http://localhost:8000/demo/map.html
 ```
 
@@ -166,6 +191,7 @@ widgets/
 ├── src/digital-marketing/   Digital Marketing page widget, its text and styles
 ├── src/lead-generation/     B2B Lead Generation page widget, its text and styles
 ├── src/about/               About page widget, its text and styles
+├── src/articles/            blog article widget, one content file per article
 ├── src/map/                 map widget, its text and generated map shapes
 ├── scripts/                 map data and bundle builders
 └── demo/                    local preview pages
