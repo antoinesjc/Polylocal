@@ -20,7 +20,7 @@ It speaks **English** and **Traditional Chinese (Taiwan)** and picks the languag
 
 ```html
 <polylocal-map></polylocal-map>
-<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@v1.0.0/map-widget/dist/polylocal-map.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/antoinesjc/polylocal@b9f3dc6a717b8143ce35d8ab07a51d599e9f0bb4/map-widget/dist/polylocal-map.js" defer></script>
 ```
 
 4. Save, then view the published page (Odoo does not run embedded scripts while you are in edit mode, so the block looks empty in the editor). Switch the site to 繁體中文 to check the Chinese version: no second embed is needed.
@@ -66,7 +66,7 @@ npm install      # first time only
 npm run build    # writes dist/polylocal-map.js
 ```
 
-Commit the updated `dist/polylocal-map.js`, tag a new version (`git tag v1.0.1 && git push --tags`) and change `@v1.0.0` to `@v1.0.1` in the Odoo embed. Using a version tag means the site always loads exactly that version, with no CDN caching surprises.
+Commit and push the updated `dist/polylocal-map.js`, then point the Odoo embed at the new version. The embed above pins an exact commit (the long code after `@`), so the site always loads exactly that version and CDN caching never serves something stale. To update, either replace that code with the new commit's ID, or create a release on GitHub (Releases > Draft a new release, tag `v1.0.1`) and use `@v1.0.1`.
 
 ## Changing the map
 
