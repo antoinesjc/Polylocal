@@ -119,9 +119,11 @@ class PolylocalInsights extends PolylocalPage {
     const { esc } = h;
     const t = I18N[lang];
     const all = this.items(lang);
-    // Featured case studies (e.g. Redai) always come first; the rest keep the blog's order.
-    const cases = all.filter((x) => !x.isEvent).sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
-    const events = all.filter((x) => x.isEvent);
+    // Newest first (Odoo post numbers grow with each new post). A featured
+    // case study (e.g. Redai) stays at the top of the case studies.
+    const newest = (a, b) => (Number(postId(b.href)) || 0) - (Number(postId(a.href)) || 0);
+    const cases = all.filter((x) => !x.isEvent).sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || newest(a, b));
+    const events = all.filter((x) => x.isEvent).sort(newest);
     const arrow = h.icons.arrow;
 
     const caseCard = (c) => `
