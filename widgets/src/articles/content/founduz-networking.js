@@ -4,7 +4,7 @@ export default {
   id: 'founduz-networking',
   kind: 'event',
   category: 'updates',
-  url: '/blog/polylocal-updates-4',
+  url: '/blog/case-studies-11/a-networking-evening-in-taipei-with-founduz-38',
   tone: 'clay',
   related: ['europe-market', 'taiwan-expo-2026'],
   en: {
