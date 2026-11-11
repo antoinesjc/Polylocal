@@ -139,6 +139,7 @@ Open the blog post in the Odoo editor, delete its text, drag in one **Embed Code
 | Case study: Formosa Network | `<polylocal-article article="formosa-network"></polylocal-article>` |
 | Our first public event | `<polylocal-article article="first-event"></polylocal-article>` |
 | Europe's changing market | `<polylocal-article article="europe-market"></polylocal-article>` |
+| Networking evening with Founduz | `<polylocal-article article="founduz-networking"></polylocal-article>` |
 | Taiwan Expo 2026 in Warsaw | `<polylocal-article article="taiwan-expo-2026"></polylocal-article>` |
 
 followed, in the same block, by:
