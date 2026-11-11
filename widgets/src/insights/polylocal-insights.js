@@ -95,6 +95,7 @@ class PolylocalInsights extends PolylocalPage {
         dek: t.dek,
         date: when || base.date || '',
         client: a.client,
+        featured: !!a.featured,
         tone: a.tone,
         stat,
         image: photo ? assetUrl(`photos/${photo.photos[0]}`, this) : base.cover || '',
@@ -114,7 +115,8 @@ class PolylocalInsights extends PolylocalPage {
     const { esc } = h;
     const t = I18N[lang];
     const all = this.items(lang);
-    const cases = all.filter((x) => !x.isEvent);
+    // Featured case studies (e.g. Redai) always come first; the rest keep the blog's order.
+    const cases = all.filter((x) => !x.isEvent).sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0));
     const events = all.filter((x) => x.isEvent);
     const arrow = h.icons.arrow;
 

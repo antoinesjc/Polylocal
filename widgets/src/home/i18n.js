@@ -101,9 +101,9 @@ export const HOME = {
       all: 'All articles',
       read: 'Read articles',
       cards: [
+        { href: '/blog/case-studies-11/redai-two-polish-buyers-in-six-months-37', tag: 'Case study · Redai', text: 'Two Polish buyers in six months for a Taiwanese precision tools maker.' },
         { href: '/blog/taiwan-market-trends-15', tag: 'Taiwan market trends', text: 'What is changing in Taiwan’s market, and what it means for European companies.' },
         { href: '/blog/b2b-14', tag: 'B2B', text: 'Practical notes on reaching buyers and partners across the corridor.' },
-        { href: '/blog/case-studies-11', tag: 'Case studies', text: 'How companies have become visible and credible in a new market.' },
       ],
     },
     cta: {
@@ -213,9 +213,9 @@ export const HOME = {
       all: '所有文章',
       read: '閱讀文章',
       cards: [
+        { href: '/blog/case-studies-11/redai-two-polish-buyers-in-six-months-37', tag: '案例分享 · Redai', text: '六個月內，為台灣精密工具製造商開發兩家波蘭買主。' },
         { href: '/blog/taiwan-market-trends-15', tag: '台灣市場趨勢', text: '台灣市場正在發生的變化，以及對歐洲企業的意義。' },
         { href: '/blog/b2b-14', tag: 'B2B', text: '跨越歐亞走廊、接觸買家與合作夥伴的實用觀察。' },
-        { href: '/blog/case-studies-11', tag: '案例分享', text: '企業如何在新市場中建立能見度與信任。' },
       ],
     },
     cta: {

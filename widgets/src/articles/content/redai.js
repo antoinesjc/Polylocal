@@ -1,11 +1,11 @@
 // Case study: Redai precision tools. English and Traditional Chinese.
-// `url`: replace with the blog post's address once it exists in Odoo
-// (it must end with the post number, e.g. ...-redai-41).
+// `featured: true` lists it first among case studies (Insights page, related links).
 export default {
   id: 'redai',
   kind: 'case',
   category: 'cases',
-  url: '/blog/case-studies-11',
+  url: '/blog/case-studies-11/redai-two-polish-buyers-in-six-months-37',
+  featured: true,
   tone: 'clay',
   client: { name: 'Redai', color: '#2F5DA8', logo: 'logos/redai-color.png' },
   related: ['mandarin-zest', 'formosa-network'],
