@@ -102,11 +102,15 @@ class PolylocalInsights extends PolylocalPage {
       };
     };
     if (this._odoo && this._odoo.lang === lang) {
-      return this._odoo.posts.map((p) => {
+      const listed = this._odoo.posts.map((p) => {
         const a = BY_POST[p.id];
         if (a) return fromArticle(a, p);
         return { isEvent: p.isEvent, href: p.href, title: p.title, dek: p.teaser, date: p.date, image: p.cover, tone: p.isEvent ? 'clay' : 'sky' };
       });
+      // Featured articles always show, even if their blog post isn't tagged in Odoo yet.
+      const shown = new Set(this._odoo.posts.map((p) => p.id));
+      const extra = Object.values(ARTICLES).filter((a) => a.featured && !shown.has(postId(a.url))).map((a) => fromArticle(a));
+      return [...extra, ...listed];
     }
     return Object.values(ARTICLES).map((a) => fromArticle(a));
   }

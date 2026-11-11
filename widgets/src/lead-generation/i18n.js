@@ -50,6 +50,12 @@ export const LG = {
         ['Long-term relationships', 'We support ongoing communication, gather customer feedback and keep your brand relevant to existing clients abroad.'],
       ],
     },
+    caseStudy: {
+      kicker: 'Case study',
+      title: 'Redai: two Polish buyers in six months.',
+      text: 'For a Taiwanese precision tools maker, we adapted the website and catalogues for Polish buyers, ran B2B lead generation, promoted the brand at more than 20 trade shows and events, and organised the company’s delegation visit to Poland.',
+      link: 'Read the case study',
+    },
     engage: {
       kicker: 'How we engage',
       title: 'A sprint, or a standing team.',
@@ -136,6 +142,12 @@ export const LG = {
         ['潛在客戶培育', '找出真正的決策者，評估其需求與採購階段，並持續維繫關係，直到對方準備好合作。'],
         ['長期客戶關係', '協助持續溝通、蒐集客戶回饋，讓你的品牌在海外既有客戶心中保持重要地位。'],
       ],
+    },
+    caseStudy: {
+      kicker: '案例分享',
+      title: 'Redai：六個月內成功開發兩家波蘭買主。',
+      text: '我們為這家台灣精密工具製造商將官網與型錄調整為適合波蘭買主的版本，執行 B2B 潛在客戶開發，在 20 多場商展與活動中推廣品牌，並安排企業參訪波蘭的整趟行程。',
+      link: '閱讀完整案例',
     },
     engage: {
       kicker: '合作模式',

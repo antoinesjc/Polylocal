@@ -1,6 +1,8 @@
 import { LG } from './i18n.js';
 import { PolylocalPage } from '../shared/page.js';
 import CSS from './styles.js';
+import { assetUrl } from '../shared/lang.js';
+import REDAI from '../articles/content/redai.js';
 
 const SERVICE_ICONS = [
   '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg>',
@@ -81,6 +83,18 @@ class PolylocalLeadGeneration extends PolylocalPage {
         <p>${esc(text)}</p>
       </article>`).join('')}
     </div>
+  </section>
+
+  <section class="wrap lg-case">
+    <a class="lgc" href="${L(REDAI.url)}">
+      <div class="lgc-main">
+        <div class="lgc-top"><span class="lgc-logo"><img src="${esc(assetUrl(REDAI.client.logo, this))}" alt="${esc(REDAI.client.name)}"></span><span class="lgc-kicker">${esc(t.caseStudy.kicker)}</span></div>
+        <h2>${esc(t.caseStudy.title)}</h2>
+        <p>${esc(t.caseStudy.text)}</p>
+        <span class="lgc-more">${esc(t.caseStudy.link)}${icons.arrow}</span>
+      </div>
+      <div class="lgc-stats">${REDAI[lang].results.map(([n, txt]) => `<div><span class="lgc-n">${esc(n)}</span><span class="lgc-l">${esc(txt)}</span></div>`).join('')}</div>
+    </a>
   </section>
 
   <section class="white-band">
