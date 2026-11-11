@@ -26,7 +26,7 @@ export const LOGOS = {
   partners: [
     { file: 'logos/mission-grey.png', alt: 'Mission Grey', h: 30 },
     { file: 'logos/formosa-network.png', alt: 'Formosa Network', h: 54 },
-    { file: 'logos/founduz.svg', alt: 'Founduz', h: 26 },
+    { file: 'logos/founduz.svg', alt: 'Founduz', h: 34 },
   ],
 };
 
