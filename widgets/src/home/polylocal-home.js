@@ -88,6 +88,7 @@ ${h.proof()}
       <h2>${esc(t.ground.title)}</h2>
       <p class="body">${esc(t.ground.body)}</p>
       <a class="underline" href="${L('/about-us')}">${esc(t.ground.link)}${icons.arrow}</a>
+      <div class="ground-photos">${h.photo('warsawDusk', 'gp-a')}${h.photo('brussels', 'gp-b')}</div>
     </div>
     <div class="tiles split-b">
       ${t.ground.tiles.map((x, i) => `<div class="tile t${i}"><span class="tile-big${x.zh ? ' zh' : ''}">${esc(x.big)}</span><h3>${esc(x.title)}</h3><p>${esc(x.text)}</p></div>`).join('')}

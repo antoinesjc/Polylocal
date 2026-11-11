@@ -63,6 +63,7 @@ class PolylocalDigitalMarketing extends PolylocalPage {
       <p class="eyebrow sky-text">${esc(t.problem.kicker)}</p>
       <h2>${esc(t.problem.title)}</h2>
       <p class="body">${esc(t.problem.body)}</p>
+      ${h.photo('globe', 'split-photo')}
     </div>
     <div class="letters split-b">
       ${t.problem.items.map(([title, text], i) => `<div class="letter"><span class="letter-mark">${'ABCD'[i]}</span><h3>${esc(title)}</h3><p>${esc(text)}</p></div>`).join('')}
@@ -109,8 +110,9 @@ class PolylocalDigitalMarketing extends PolylocalPage {
       <p class="eyebrow sky-text">${esc(t.markets.kicker)}</p>
       <h2 class="mid markets-title">${esc(t.markets.title)}</h2>
       <div class="markets">
-        ${t.markets.cards.map((c) => `
+        ${t.markets.cards.map((c, i) => `
         <article class="market ${c.tone}">
+          ${h.photo(['taipeiEvent', 'krakow', 'euCommission'][i], 'market-photo')}
           <div class="market-top"><h3>${esc(c.name)}</h3><span class="market-alt">${esc(c.alt)}</span></div>
           <p class="market-langs">${esc(c.langs)}</p>
           <ul>${c.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>

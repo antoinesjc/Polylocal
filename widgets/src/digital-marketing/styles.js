@@ -110,4 +110,6 @@ details p{margin-top:14px;font-size:16px;line-height:1.7;color:var(--text-2);max
   .market{padding:28px}
   .faq-row{gap:32px}
 }
+.market-photo{margin:-36px -36px 8px;aspect-ratio:16/10}
+@media (max-width:640px){.market-photo{margin:-28px -28px 8px}}
 `;

@@ -48,6 +48,7 @@ class PolylocalLeadGeneration extends PolylocalPage {
       <p class="eyebrow">${esc(t.problem.kicker)}</p>
       <h2>${esc(t.problem.title)}</h2>
       <p class="body">${esc(t.problem.body)}</p>
+      ${h.photo('warsawNight', 'split-photo')}
     </div>
     <ol class="numbered split-b">
       ${t.problem.items.map(([title, text], i) => `<li><span class="num">0${i + 1}</span><div><h3>${esc(title)}</h3><p>${esc(text)}</p></div></li>`).join('')}

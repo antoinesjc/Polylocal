@@ -73,6 +73,12 @@ a:focus-visible{outline:2px solid var(--sky);outline-offset:3px}
 .logos img{display:block;width:auto;max-width:100%}
 
 /* split sections */
+.ph{margin:0;overflow:hidden;background:var(--sand)}
+.ph img{display:block;width:100%;height:100%;object-fit:cover}
+.split-photo{margin-top:40px;aspect-ratio:3/2}
+.ground-photos{margin-top:40px;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:12px;align-items:end}
+.gp-a{aspect-ratio:4/3}
+.gp-b{aspect-ratio:3/4}
 .split{display:flex;flex-wrap:wrap;gap:64px;padding-top:128px;padding-bottom:112px}
 .split-a{flex:1 1 420px;min-width:0}
 .split-b{flex:1 1 520px;min-width:0}

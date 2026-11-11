@@ -3,7 +3,7 @@
 // full window width inside Odoo's embed container, and in-page anchor links.
 // A page widget extends it and implements `page(lang, h)` returning HTML.
 import { detectLang, localHref, watchLang, loadFonts, assetUrl, esc } from './lang.js';
-import { COMMON, LOGOS, ICONS } from './common.js';
+import { COMMON, LOGOS, ICONS, PHOTOS } from './common.js';
 import BASE_CSS from './styles.js';
 
 export class PolylocalPage extends HTMLElement {
@@ -63,6 +63,8 @@ export class PolylocalPage extends HTMLElement {
     const logo = (l) => `<img src="${esc(assetUrl(l.file, this))}" alt="${esc(l.alt)}" style="height:${l.h}px" loading="lazy">`;
     return {
       lang, esc, L, icons: ICONS, common: c,
+      // A photo from PHOTOS, cropped to fill its box (size it with the class).
+      photo: (key, cls = '') => { const ph = PHOTOS[key]; return `<figure class="ph ${cls}"><img src="${esc(assetUrl(ph.file, this))}" alt="${esc(ph[lang])}" loading="lazy"></figure>`; },
       // Press and partner logos. Used on the homepage only.
       proof: () => `
   <section class="proof">
