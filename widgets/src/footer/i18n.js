@@ -5,7 +5,7 @@ export default {
     tagline: 'Think global, act local.',
     about: 'Digital marketing and B2B lead generation between Taiwan, Central and Eastern Europe and the EU.',
     cols: [
-      { title: 'Services', links: [['Digital marketing', '/digital-marketing'], ['B2B lead generation', '/b2b-lead-generation']] },
+      { title: 'Services', links: [['Digital marketing', '/digital-marketing'], ['B2B lead generation', '/b2b-lead-generation'], ['Packages & pricing', '/pricing']] },
       { title: 'Polylocal', links: [['About us', '/about-us'], ['Insights', '/insight'], ['Contact', '/contactus']] },
     ],
     news: {
@@ -24,7 +24,7 @@ export default {
     tagline: '放眼全球，在地行動。',
     about: '協助台灣企業進軍歐洲的數位行銷與 B2B 潛在客戶開發，聚焦波蘭、中東歐與歐盟市場。',
     cols: [
-      { title: '服務', links: [['數位行銷', '/digital-marketing'], ['B2B 潛在客戶開發', '/b2b-lead-generation']] },
+      { title: '服務', links: [['數位行銷', '/digital-marketing'], ['B2B 潛在客戶開發', '/b2b-lead-generation'], ['服務方案與價格', '/pricing']] },
       { title: 'Polylocal', links: [['關於我們', '/about-us'], ['洞察', '/insight'], ['聯絡我們', '/contactus']] },
     ],
     news: {
