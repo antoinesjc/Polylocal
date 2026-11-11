@@ -134,6 +134,7 @@ Open the blog post in the Odoo editor, delete its text, drag in one **Embed Code
 
 | Blog post | Embed |
 | --- | --- |
+| Case study: Redai | `<polylocal-article article="redai"></polylocal-article>` |
 | Case study: Mandarin Zest | `<polylocal-article article="mandarin-zest"></polylocal-article>` |
 | Case study: Formosa Network | `<polylocal-article article="formosa-network"></polylocal-article>` |
 | Our first public event | `<polylocal-article article="first-event"></polylocal-article>` |

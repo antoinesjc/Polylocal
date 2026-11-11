@@ -6,7 +6,7 @@ export default {
   url: '/blog/case-studies-11/case-study-growing-a-global-community-for-former-taiwan-residents-formosa-network-30',
   tone: 'clay',
   client: { name: 'Formosa Network', color: '#1B2A6B', logo: 'logos/formosa-network.png' },
-  related: ['mandarin-zest'],
+  related: ['redai', 'mandarin-zest'],
   en: {
     tags: ['Case study', 'Community · Non-profit'],
     title: ['Formosa Network: a global community for', 'everyone connected to Taiwan', ''],

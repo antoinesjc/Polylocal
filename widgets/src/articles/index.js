@@ -6,9 +6,10 @@ import formosaNetwork from './content/formosa-network.js';
 import firstEvent from './content/first-event.js';
 import europeMarket from './content/europe-market.js';
 import taiwanExpo2026 from './content/taiwan-expo-2026.js';
+import redai from './content/redai.js';
 
 export const ARTICLES = Object.fromEntries(
-  [mandarinZest, formosaNetwork, firstEvent, europeMarket, taiwanExpo2026].map((a) => [a.id, a]),
+  [redai, mandarinZest, formosaNetwork, firstEvent, europeMarket, taiwanExpo2026].map((a) => [a.id, a]),
 );
 
 // Text around the articles (breadcrumbs, labels), in both languages.

@@ -6,9 +6,9 @@
 // Client logos. Drop a single-colour logo file into assets/logos/ and set `file`
 // to show the image; while `file` is null the name is shown as a wordmark.
 export const CLIENTS = [
-  { name: 'Acroparts', file: null, h: 28 },
-  { name: 'Redai', file: null, h: 28 },
-  { name: 'TEEMA', file: null, h: 28 },
+  { name: 'Redai', file: 'logos/redai.png', h: 30 },
+  { name: 'Acroparts Technology', file: 'logos/acroparts.png', h: 30 },
+  { name: 'TEEMA', file: 'logos/teema.png', h: 32 },
   // { name: 'C-Tech', file: null, h: 28 }, // on hold until confirmed
 ];
 
@@ -115,9 +115,9 @@ export const PRICING = {
       kicker: 'Our work',
       title: 'Built from scratch, measured in results.',
       caseTag: 'Case study',
-      caseTitle: 'Mandarin Zest: from zero to an 80,000-learner brand in one year',
-      caseText: 'Brand, social media, email, e-commerce, a paid community and its own app, run by our team.',
-      caseStats: [['6×', 'Instagram growth'], ['80k+', 'learners reached'], ['4', 'product lines']],
+      caseTitle: 'Redai: two Polish buyers in six months',
+      caseText: 'Polish-ready website and catalogues, B2B lead generation, 20+ trade shows and a company delegation to Poland, for a Taiwanese precision tools maker.',
+      caseStats: [['2', 'buyers in Poland'], ['6', 'months'], ['20+', 'trade shows and events']],
       caseLink: 'Read the case study',
       quotePlaceholder: 'Client testimonial goes here (Oscar, Redai)',
       quoteName: 'Oscar',
@@ -223,9 +223,9 @@ export const PRICING = {
       kicker: '實績',
       title: '從零開始打造，用成果說話。',
       caseTag: '案例分享',
-      caseTitle: 'Mandarin Zest：一年內從零打造 8 萬名學習者的品牌',
-      caseText: '品牌、社群、電子報、電商、付費社群與專屬 App，全部由我們的團隊執行。',
-      caseStats: [['6 倍', 'Instagram 成長'], ['8 萬+', '觸及學習者'], ['4', '條產品線']],
+      caseTitle: 'Redai：六個月內成功開發兩家波蘭買主',
+      caseText: '為台灣精密工具製造商完成波蘭文官網與型錄、B2B 潛在客戶開發、20 多場商展，以及企業參訪波蘭。',
+      caseStats: [['2', '家波蘭買主'], ['6', '個月'], ['20+', '場商展與活動']],
       caseLink: '閱讀完整案例',
       quotePlaceholder: '客戶推薦語（Oscar，Redai）',
       quoteName: 'Oscar',
@@ -243,5 +243,9 @@ export const PRICING = {
 // Testimonial. Fill in `en` and `zh-TW` once Oscar has approved the wording;
 // while it is null the page shows no quote (a placeholder appears only with the
 // `preview` attribute, for drafts).
-export const TESTIMONIAL = null;
-// export const TESTIMONIAL = { en: '…', 'zh-TW': '…', name: 'Oscar', role: { en: 'Redai', 'zh-TW': 'Redai' } };
+export const TESTIMONIAL = {
+  en: 'Dorota served as my interpreter at Taiwan Expo Europe in Warsaw. She is a trustworthy, detail-oriented professional. Her exceptional interpersonal and language skills, combined with a deep understanding of both Taiwanese and Polish culture, made her an indispensable member of our exhibition team.',
+  'zh-TW': 'Dorota 在華沙的歐洲台灣形象展擔任我的口譯。她值得信賴，做事細心專業。她出色的人際溝通與語言能力，加上對台灣與波蘭文化的深入了解，使她成為我們參展團隊中不可或缺的一員。',
+  name: 'J.M. Jen',
+  role: { en: 'Sales Manager, Acroparts Technology', 'zh-TW': '碩哲科技 業務經理' },
+};

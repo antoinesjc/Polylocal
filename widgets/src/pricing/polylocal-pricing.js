@@ -2,7 +2,7 @@ import { PRICING, PRICES, CLIENTS, TESTIMONIAL } from './i18n.js';
 import { PolylocalPage } from '../shared/page.js';
 import { LOGOS } from '../shared/common.js';
 import { assetUrl } from '../shared/lang.js';
-import MZ from '../articles/content/mandarin-zest.js';
+import MZ from '../articles/content/redai.js';
 import CSS from './styles.js';
 
 class PolylocalPricing extends PolylocalPage {
