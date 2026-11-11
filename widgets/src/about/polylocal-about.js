@@ -49,7 +49,7 @@ class PolylocalAbout extends PolylocalPage {
     </div>
   </section>
 
-  <div class="wrap ab-photos">${h.photo('euFlags', 'abp-a')}${h.photo('warsawDusk', 'abp-b')}</div>
+  <div class="wrap ab-photos">${h.photo('libertySquare', 'abp-b')}${h.photo('euFlags', 'abp-a')}${h.photo('raohe', 'abp-b')}</div>
 
   <section class="reach">
     <div class="wrap">

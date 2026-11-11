@@ -73,7 +73,7 @@ export default `
   .reach > .wrap,.commit > .wrap{padding-top:80px;padding-bottom:80px}
   .network{padding:20px}
 }
-.ab-photos{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:12px;padding-bottom:104px}
+.ab-photos{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.6fr) minmax(0,1.2fr);gap:12px;padding-bottom:104px}
 .abp-a,.abp-b{aspect-ratio:auto;height:420px}
 @media (max-width:760px){.ab-photos{grid-template-columns:1fr;padding-bottom:72px}.abp-a,.abp-b{height:260px}}
 `;

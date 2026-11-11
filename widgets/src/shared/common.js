@@ -45,5 +45,9 @@ export const PHOTOS = {
   euCommission: { file: 'photos/eu-commission.jpg', en: 'EU flags in front of the European Commission in Brussels', 'zh-TW': '布魯塞爾歐盟執委會前的歐盟旗幟' },
   euFlags: { file: 'photos/eu-flags.jpg', en: 'Flags of EU member states', 'zh-TW': '歐盟會員國國旗' },
   taipeiEvent: { file: 'photos/first-event-1.jpg', en: 'A Polylocal talk for Taiwanese businesses in Taipei', 'zh-TW': 'Polylocal 在台北為台灣企業舉辦的講座' },
+  taipei101: { file: 'photos/taipei-101-street.jpg', en: 'Taipei 101 seen from a residential street', 'zh-TW': '從巷弄望向台北 101' },
+  taipeiSunset: { file: 'photos/taipei-sunset.jpg', en: 'Taipei skyline at sunset', 'zh-TW': '夕陽下的台北天際線' },
+  raohe: { file: 'photos/raohe-night-market.jpg', en: 'The entrance of Raohe Night Market in Taipei', 'zh-TW': '台北饒河街觀光夜市入口' },
+  libertySquare: { file: 'photos/liberty-square.jpg', en: 'The Liberty Square gate in Taipei', 'zh-TW': '台北自由廣場牌樓' },
   globe: { file: 'photos/europe-globe.jpg', en: 'Europe on a vintage globe', 'zh-TW': '地球儀上的歐洲' },
 };

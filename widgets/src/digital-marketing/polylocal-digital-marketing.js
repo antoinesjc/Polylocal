@@ -112,7 +112,7 @@ class PolylocalDigitalMarketing extends PolylocalPage {
       <div class="markets">
         ${t.markets.cards.map((c, i) => `
         <article class="market ${c.tone}">
-          ${h.photo(['taipeiEvent', 'krakow', 'euCommission'][i], 'market-photo')}
+          ${h.photo(['taipeiSunset', 'krakow', 'euCommission'][i], 'market-photo')}
           <div class="market-top"><h3>${esc(c.name)}</h3><span class="market-alt">${esc(c.alt)}</span></div>
           <p class="market-langs">${esc(c.langs)}</p>
           <ul>${c.items.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>
