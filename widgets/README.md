@@ -10,6 +10,7 @@ Drop-in widgets for the Odoo site at polylocal.eu.
 | `<polylocal-digital-marketing>` | `dist/polylocal-digital-marketing.js` | The Digital Marketing service page |
 | `<polylocal-lead-generation>` | `dist/polylocal-lead-generation.js` | The B2B Lead Generation service page |
 | `<polylocal-about>` | `dist/polylocal-about.js` | The About page |
+| `<polylocal-pricing>` | `dist/polylocal-pricing.js` | The Packages & pricing page: market test, three packages, comparison, extras |
 | `<polylocal-footer>` | `dist/polylocal-footer.js` | The site footer, wrapped around Odoo's own newsletter form |
 | `<polylocal-contact>` | `dist/polylocal-contact.js` | The Contact page, wrapped around Odoo's own contact form |
 | `<polylocal-insights>` | `dist/polylocal-insights.js` | The Insights page: case studies, then events, updated from the blog |
@@ -82,6 +83,17 @@ Same steps as the homepage, on the `/about-us` page, with:
 ```
 
 It names no individual team members, by design.
+
+## Add the Packages & pricing page
+
+Create a page at `/pricing` and add, as for the homepage:
+
+```html
+<polylocal-pricing></polylocal-pricing>
+<script src="https://antoinesjc.github.io/Polylocal/widgets/dist/polylocal-pricing.js" defer></script>
+```
+
+Prices and wording are in [`src/pricing/i18n.js`](src/pricing/i18n.js): euros on the English site, US dollars with an approximate NT$ amount on the Chinese site. Client logos show as text until logo files are added to `assets/logos/` and named in `CLIENTS`. The testimonial stays hidden until `TESTIMONIAL` is filled in (add the `preview` attribute to see its placeholder).
 
 ## Add the footer
 
