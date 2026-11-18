@@ -22,7 +22,10 @@ export const COMMON = {
 };
 
 export const LOGOS = {
-  featured: [{ file: 'logos/the-diplomat.png', alt: 'The Diplomat', h: 24 }],
+  featured: [
+    { file: 'logos/the-diplomat.png', alt: 'The Diplomat', h: 24 },
+    { file: 'logos/meet-startups.png', alt: 'Meet Startups 創業小聚', h: 40 },
+  ],
   partners: [
     { file: 'logos/mission-grey.png', alt: 'Mission Grey', h: 30 },
     { file: 'logos/formosa-network.png', alt: 'Formosa Network', h: 54 },
